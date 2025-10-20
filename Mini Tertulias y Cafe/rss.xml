@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
+  
+  <channel>
+    <title>Mini Tertulias & Cafe</title>
+    <link>https://www.ejemplo.com/podcast</link>
+    <language>es-es</language>
+    <copyright>&#xA9; 2025 Mini Tertulias & Cafe</copyright>
+    <generator>Generador de Podcast Profesional</generator>
+    <pubDate>Mon, 20 Oct 2025 18:54:47 -0300</pubDate>
+    <lastBuildDate>Mon, 20 Oct 2025 18:54:47 -0300</lastBuildDate>
+    
+    <itunes:author>Nicolas Suarez</itunes:author>
+    <itunes:summary>
+      El único podcast que te da dos caras de la moneda sobre los temas más polémicos de la tecnología, política y sociedad. ¡Únete al debate!
+    </itunes:summary>
+    <description>
+      El único podcast que te da dos caras de la moneda sobre los temas más polémicos de la tecnología, política y sociedad. ¡Únete al debate!
+    </description>
+    
+    <itunes:owner>
+      <itunes:name>Contacto Mini Tertulias & Cafe</itunes:name>
+      <itunes:email>nicolassuarez.cabrera@gmail.com</itunes:email>
+    </itunes:owner>
+    
+    <itunes:image href="https://www.ejemplo.com/podcast/portada_3000x3000.jpg" />
+    
+    <itunes:category text="News">
+      <itunes:category text="Politics" />
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    
+    <item>
+      <title>E01: Filosofía e Inteligencia Artificial: ¿Será la IA consciente?</title>
+      <pubDate>Mon, 20 Oct 2025 18:54:47 -0300</pubDate>
+      <link>https://www.ejemplo.com/podcast/episodio01</link>
+      <guid isPermaLink="false">ds001-ia-filosofia</guid>
+      
+      <description>
+        <![CDATA[
+          Debate sobre si la IA podría alcanzar la consciencia. ¿Es solo código o es el inicio de una nueva forma de vida? La Dra. Debate argumenta a favor, el Mtro. Controversia en contra.
+        ]]>
+      </description>
+      
+      <enclosure 
+          url="https://media.ejemplo.com/audio/ds_e01_ia_filo.mp3" 
+          length="45000000" 
+          type="audio/mpeg" />
+          
+      <itunes:duration>00:45:00</itunes:duration>
+      <itunes:author>Dr. Debate y Mtra. Controversia</itunes:author>
+      <itunes:image href="https://www.ejemplo.com/podcast/e01_miniatura.jpg" />
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>  
+  </channel>
+</rss>
