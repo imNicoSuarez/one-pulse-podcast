@@ -56,5 +56,15 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
     </item>  
-  </channel>
+  
+<item>
+  <title>Amistades Auténticas: Desentraña Red Flags y Green Flags</title>
+  <description>¿Sabes realmente identificar si tus amistades te nutren o te agotan? En este episodio, exploramos las cruciales 'red flags' y 'green flags' que definen un vínculo genuino. Aprende a detectar la reciprocidad ausente, el juicio constante o el vampirismo emocional, y a valorar el apoyo incondicional, la escucha activa y la seguridad emocional. Descubre cómo proteger tu bienestar, establecer límites claros y cultivar relaciones que verdaderamente te hagan crecer. ¡Una guía esencial para navegar el complejo mundo de la amistad y construir lazos duraderos y saludables!</description>
+  <pubDate>Wed, 29 Oct 2025 13:21:57 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&id=1x8wkoNGs_5IXX2mJHHXdaFX2avOyRMz5" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1761744117421</guid>
+  <itunes:image href="https://drive.google.com/uc?export=view&id=1vWQ4W8WI14YFCcwlKJGFfcg4S-SAOXh5" />
+</item>
+
+</channel>
 </rss>
