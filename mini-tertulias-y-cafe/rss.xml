@@ -71,5 +71,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761770604176.png" />
   </item>
 
+
+  <item>
+    <title>CRISPR: ¿Curar la Humanidad o Crear Desigualdad Genética?</title>
+    <description>[En este episodio de "Mini Tertulias y Café", Sofi Luz y Marco Auguen se enfrentan al revolucionario tema de la edición genética CRISPR: Sofi se muestra "recontra enchufada" con las posibilidades de la ciencia para curar enfermedades como la fibrosis quística y poner fin al sufrimiento, viendo a CRISPR como la "esperanza" de un mundo con menos dolor y una vida más plena; en cambio, Marco Auguen critica duramente la técnica, calificándola como un "quilombo ético" que implica "jugar a ser Dios" al cortar y pegar genes, advirtiendo que el costo podría ser la desigualdad al crear "bebés a medida" solo accesibles para la élite, generando clases de humanos y un futuro distópico. El debate se intensifica al recordar el caso del científico que editó gemelas, preguntando si el avance científico justifica el riesgo y el descontrol ético.</description>
+    <pubDate>>Wed, 29 Oct 2025 21:08:46 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761772119753.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761772126049</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761772124605.png" />
+  </item>
+
 </channel>
 </rss>
