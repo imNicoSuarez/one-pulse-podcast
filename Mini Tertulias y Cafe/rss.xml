@@ -33,7 +33,7 @@ Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
       <itunes:email>nicolassuarez.cabrera@gmail.com</itunes:email>
     </itunes:owner>
 
-    <itunes:image href="https://www.ejemplo.com/assets/podcast-artwork.jpg" />
+    <itunes:image href="https://drive.google.com/uc?export=view&id=1at3evV_EqzhcrlPhvuwQhptFUdafkA7Z" />
     <image>
       <url>https://www.ejemplo.com/assets/podcast-artwork.jpg</url>
       <title>Mini Tertulias &amp; Café</title>
@@ -46,28 +46,6 @@ Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
 
     <!-- explicit debe ser "true" o "false" -->
     <itunes:explicit>false</itunes:explicit>
-
-    <!-- Episodio de ejemplo -->
-    <item>
-      <title>E01 - Amistades Auténticas: Desentraña Red Flags y Green Flags</title>
-
-      <description><![CDATA[
-¿Sabes realmente identificar si tus amistades te nutren o te agotan? En este episodio, exploramos las cruciales 'red flags' y 'green flags' que definen un vínculo genuino...
-      ]]></description>
-
-      <pubDate>Wed, 29 Oct 2025 13:21:57 -0300</pubDate>
-
-      <!-- enclosure: URL directa al mp3, length en bytes reales, type correcto -->
-      <enclosure url="https://cdn.ejemplo.com/podcasts/episodio-01.mp3" length="1234567" type="audio/mpeg" />
-
-      <guid isPermaLink="false">1761744117421</guid>
-
-      <itunes:image href="https://www.ejemplo.com/assets/episodio-01-artwork.jpg" />
-      <itunes:duration>00:06:12</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-      <itunes:episodeType>full</itunes:episodeType>
-    </item>
-
   
 <!-- Episodio de ejemplo -->
     <item>
