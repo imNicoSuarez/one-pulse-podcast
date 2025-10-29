@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Podcast</title>
+    <!-- Carga de Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuración de fuente Inter para una apariencia limpia */
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        // Configuración de Tailwind para usar el color principal
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4F46E5', // Indigo 600
+                        'secondary': '#1F2937', // Gray 800
+                    }
+                }
+            }
+        }
+
+        // --- Lógica del Reproductor de Podcast ---
+        
+        // Variables globales para elementos del DOM
+        let rssInput;
+        let episodesList;
+        let audioPlayer;
+        let loadingMessage;
+
+        /**
+         * Inicializa la aplicación después de que el DOM esté completamente cargado.
+         */
+        window.onload = function() {
+            rssInput = document.getElementById('rss-url');
+            episodesList = document.getElementById('episodes-list');
+            audioPlayer = document.getElementById('audio-player');
+            loadingMessage = document.getElementById('loading-message');
+
+            // Establecer un feed de ejemplo (NPR Up First) como marcador de posición
+            rssInput.value = 'https://feeds.simplecast.com/54PwtqA1'; 
+
+            // Asignar el evento al botón de carga
+            document.getElementById('load-button').addEventListener('click', () => {
+                const url = rssInput.value.trim();
+                if (url) {
+                    loadFeed(url);
+                }
+            });
+        }
+
+        /**
+         * Muestra mensajes de estado (ej: cargando, error).
+         * @param {string} text - El mensaje a mostrar.
+         * @param {string} type - 'loading', 'error', o 'success'.
+         */
+        function showMessage(text, type = 'loading') {
+            loadingMessage.textContent = text;
+            loadingMessage.className = 'p-4 rounded-lg mt-6 text-center transition-all duration-300';
+            
+            if (type === 'loading') {
+                loadingMessage.classList.add('bg-indigo-100', 'text-primary');
+            } else if (type === 'error') {
+                loadingMessage.classList.add('bg-red-100', 'text-red-700');
+            } else {
+                loadingMessage.classList.add('hidden');
+            }
+            loadingMessage.classList.remove('hidden');
+        }
+
+        /**
+         * Carga y parsea el feed RSS desde la URL proporcionada.
+         * @param {string} url - La URL del feed RSS.
+         */
+        async function loadFeed(url) {
+            episodesList.innerHTML = '';
+            audioPlayer.src = '';
+            showMessage('Cargando episodios...', 'loading');
+
+            // NOTA SOBRE CORS: En un entorno de producción, es probable que se necesite 
+            // un proxy del lado del servidor para evitar problemas de CORS 
+            // (Intercambio de Recursos de Origen Cruzado) con los feeds de podcast reales.
+            // Aquí intentamos una búsqueda directa.
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Error de red: ${response.status} ${response.statusText}`);
+                }
+                const xmlText = await response.text();
+                parseXML(xmlText);
+                showMessage('', 'success'); // Ocultar mensaje de carga
+            } catch (error) {
+                console.error('Error al cargar el feed:', error);
+                showMessage(`Error al cargar el feed. Verifica la URL y las restricciones de CORS. Mensaje: ${error.message}`, 'error');
+            }
+        }
+
+        /**
+         * Parsea el texto XML y renderiza la lista de episodios.
+         * @param {string} xmlText - El contenido XML del feed.
+         */
+        function parseXML(xmlText) {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+            // 1. Obtener el título del podcast
+            const channelTitleElement = xmlDoc.querySelector('channel > title');
+            const podcastTitle = channelTitleElement ? channelTitleElement.textContent : 'Podcast Desconocido';
+            document.getElementById('podcast-title-display').textContent = podcastTitle;
+            
+            // 2. Obtener los elementos de los episodios
+            const items = xmlDoc.querySelectorAll('item');
+
+            if (items.length === 0) {
+                showMessage('No se encontraron episodios en este feed. Asegúrate de que la URL es correcta.', 'error');
+                return;
+            }
+
+            episodesList.innerHTML = ''; // Limpiar la lista antes de añadir nuevos
+
+            items.forEach(item => {
+                const title = item.querySelector('title')?.textContent || 'Título Desconocido';
+                const description = item.querySelector('description')?.textContent || 'Sin descripción.';
+                const pubDate = item.querySelector('pubDate')?.textContent || '';
+                
+                // Buscar la URL del audio en la etiqueta <enclosure>
+                const enclosure = item.querySelector('enclosure');
+                const audioUrl = enclosure ? enclosure.getAttribute('url') : null;
+
+                if (audioUrl) {
+                    const episodeElement = createEpisodeElement(title, description, pubDate, audioUrl);
+                    episodesList.appendChild(episodeElement);
+                }
+            });
+
+            if (episodesList.children.length === 0) {
+                 showMessage('No se encontraron archivos de audio válidos (etiquetas <enclosure>) en este feed.', 'error');
+            }
+        }
+
+        /**
+         * Crea el elemento HTML para un episodio individual.
+         */
+        function createEpisodeElement(title, description, pubDate, audioUrl) {
+            // Formatear la fecha
+            let formattedDate = '';
+            if (pubDate) {
+                try {
+                    formattedDate = new Date(pubDate).toLocaleDateString('es-ES', { 
+                        year: 'numeric', month: 'short', day: 'numeric' 
+                    });
+                } catch (e) {
+                    formattedDate = pubDate; // Usar el texto original si el parseo falla
+                }
+            }
+
+            // Crear el contenedor principal del episodio
+            const episodeDiv = document.createElement('div');
+            episodeDiv.className = 'p-4 md:p-6 bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-4 sm:space-y-0';
+            
+            // Contenido del episodio (Título, Fecha, Descripción)
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'sm:flex-grow min-w-0';
+            contentDiv.innerHTML = `
+                <h3 class="text-xl font-semibold text-gray-900 truncate">${title}</h3>
+                ${formattedDate ? `<p class="text-sm text-primary font-medium mt-1">${formattedDate}</p>` : ''}
+                <p class="text-gray-600 mt-2 text-sm line-clamp-2">${description.replace(/<[^>]*>?/gm, '')}</p>
+            `;
+
+            // Botón de reproducción
+            const playButton = document.createElement('button');
+            playButton.textContent = 'Reproducir';
+            playButton.className = 'flex-shrink-0 mt-4 sm:mt-0 px-6 py-2 bg-primary text-white font-bold rounded-full shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 transition duration-150 whitespace-nowrap';
+            playButton.addEventListener('click', () => playEpisode(title, audioUrl));
+
+            episodeDiv.appendChild(contentDiv);
+            episodeDiv.appendChild(playButton);
+
+            return episodeDiv;
+        }
+
+        /**
+         * Carga el audio del episodio en el reproductor y lo inicia.
+         * @param {string} title - El título del episodio para mostrar.
+         * @param {string} audioUrl - La URL del archivo de audio.
+         */
+        function playEpisode(title, audioUrl) {
+            audioPlayer.src = audioUrl;
+            audioPlayer.title = title; // Establecer el título del episodio en el reproductor
+            document.getElementById('playing-title').textContent = title;
+
+            // Intentar reproducir automáticamente
+            const playPromise = audioPlayer.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    // La reproducción se inició correctamente
+                }).catch(error => {
+                    // La reproducción automática fue bloqueada (es común en navegadores)
+                    console.warn("La reproducción automática fue bloqueada. El usuario debe presionar 'Play' en el control.");
+                    // Opcional: Mostrar un mensaje al usuario para que presione play
+                });
+            }
+        }
+
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center py-6 mb-8 border-b-2 border-primary/10">
+            <h1 class="text-4xl font-extrabold text-primary">Reproductor de Podcast RSS</h1>
+            <p class="text-gray-600 mt-2">Carga cualquier *feed* RSS de podcast para escuchar tus episodios favoritos.</p>
+        </header>
+
+        <!-- Sección de Entrada de URL -->
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mb-8">
+            <div class="flex flex-col md:flex-row gap-4">
+                <input 
+                    type="url" 
+                    id="rss-url" 
+                    placeholder="URL del Feed RSS (Ej: https://feeds.simplecast.com/...)" 
+                    class="flex-grow p-3 border border-gray-300 rounded-xl focus:border-primary focus:ring-primary focus:ring-1 transition duration-150"
+                    value=""
+                >
+                <button 
+                    id="load-button" 
+                    class="px-6 py-3 bg-secondary text-white font-semibold rounded-xl hover:bg-gray-700 transition duration-150 shadow-md whitespace-nowrap"
+                >
+                    Cargar Podcast
+                </button>
+            </div>
+            <div id="loading-message" class="hidden"></div>
+        </div>
+
+        <!-- Sección de Reproducción Actual -->
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mb-10 border-l-4 border-primary">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Reproduciendo Ahora:</h2>
+            <p id="playing-title" class="text-lg text-gray-700 mb-4 font-medium italic">Selecciona un episodio de la lista inferior.</p>
+            <audio id="audio-player" controls class="w-full rounded-lg" preload="none"></audio>
+        </div>
+
+        <!-- Sección de Lista de Episodios -->
+        <h2 id="podcast-title-display" class="text-3xl font-bold text-gray-800 mb-6">Episodios:</h2>
+        
+        <div id="episodes-list" class="space-y-4">
+            <!-- Los episodios se cargarán aquí -->
+            <div class="p-6 text-center text-gray-500 bg-gray-100 rounded-xl">
+                Ingresa y carga una URL de feed RSS para ver los episodios.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
