@@ -41,5 +41,15 @@
        <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761762888273.png" />
      </item>
 
+
+  <item>
+    <title>El Último Ping: Nostalgia por MSN Messenger y su Legado Digital</title>
+    <description>[¿Recuerdas el 'zumbido' o la emoción de personalizar tu 'nick'? Exploramos la profunda nostalgia por MSN Messenger, el servicio de mensajería que definió una generación. Descubre cómo moldeó identidades, forjó conexiones únicas y qué podemos aprender de su legado en la era de la hiperconectividad. Un viaje al pasado digital que te hará reflexionar sobre el presente.</description>
+    <pubDate>>Wed, 29 Oct 2025 19:57:46 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761765204018.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761767866420</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761767864048.png" />
+  </item>
+
 </channel>
 </rss>
