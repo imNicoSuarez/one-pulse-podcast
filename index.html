@@ -54,6 +54,9 @@
         let playerImageContainer;
         let defaultPodcastCoverUrl = 'https://placehold.co/100x100/4F46E5/FFFFFF?text=Podcast'; // Placeholder por defecto
         
+        // Constante para el espacio de nombres de iTunes
+        const ITUNES_NAMESPACE = 'http://www.itunes.com/dtds/podcast-1.0.dtd';
+        
         /**
          * Inicializa la aplicación después de que el DOM esté completamente cargado.
          */
@@ -184,10 +187,13 @@
             // 2. Obtener la imagen de portada del podcast (Channel Image)
             let podcastImageUrl = defaultPodcastCoverUrl;
             
-            // 2.1 Buscar en <itunes:image> (Común en feeds de podcast)
-            const itunesImage = xmlDoc.querySelector('channel > itunes\\:image');
-            if (itunesImage && itunesImage.getAttribute('href')) {
-                podcastImageUrl = itunesImage.getAttribute('href');
+            // 2.1 Buscar en <itunes:image> (Usando getElementsByTagNameNS para mayor compatibilidad)
+            // Esto busca la etiqueta 'image' con el namespace de iTunes
+            const itunesImageElements = xmlDoc.getElementsByTagNameNS(ITUNES_NAMESPACE, 'image');
+            const channelItunesImage = itunesImageElements.length > 0 ? itunesImageElements[0] : null;
+
+            if (channelItunesImage && channelItunesImage.getAttribute('href')) {
+                podcastImageUrl = channelItunesImage.getAttribute('href');
             } else {
                 // 2.2 Buscar en <image> standard
                 const standardImage = xmlDoc.querySelector('channel > image > url');
@@ -197,6 +203,7 @@
             }
             
             podcastCoverDisplay.src = podcastImageUrl;
+            // Asegurarse de que la imagen del reproductor también se actualice con la portada del podcast (como fallback inicial)
             playerImageContainer.innerHTML = `<img src="${podcastImageUrl}" class="player-cover opacity-50" alt="Cover Podcast">`;
 
 
@@ -221,7 +228,11 @@
 
                 // Buscar la imagen del episodio (priorizar itunes:image a nivel de item)
                 let episodeImageUrl = podcastImageUrl; // Usar la imagen del podcast como fallback
-                const itemItunesImage = item.querySelector('itunes\\:image');
+                
+                // Usar getElementsByTagNameNS para encontrar itunes:image dentro del item
+                const itemItunesImageElements = item.getElementsByTagNameNS(ITUNES_NAMESPACE, 'image');
+                const itemItunesImage = itemItunesImageElements.length > 0 ? itemItunesImageElements[0] : null;
+                
                 if (itemItunesImage && itemItunesImage.getAttribute('href')) {
                     episodeImageUrl = itemItunesImage.getAttribute('href');
                 }
