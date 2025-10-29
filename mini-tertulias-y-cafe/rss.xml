@@ -111,5 +111,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761772568521.png" />
   </item>
 
+
+  <item>
+    <title>Vigilancia Digital: ¿Seguridad para todos o Control Total?</title>
+    <description>[En un nuevo y candente debate de "Mini Tertulias y Café", Sofi Luz y Marco Auguen discuten si la vigilancia digital es un avance necesario o un peligro para la libertad: Sofi argumenta que las herramientas digitales nos brindan tranquilidad y seguridad para prevenir delitos, encontrar personas desaparecidas y que la tecnología en sí no es mala, sino una parte de la vida moderna; por su parte, Marco expresa su escalofrío ante la idea del "Gran Hermano" en el bolsillo, calificándola de un control absoluto y un atropello a la privacidad, advirtiendo que la historia enseña que el poder sin límites lleva al abuso y que la libertad se pone en riesgo por el "costo de la comodidad". El episodio cierra preguntando a la audiencia: ¿Priorizas la seguridad con vigilancia o la libertad total?</description>
+    <pubDate>>Wed, 29 Oct 2025 21:18:43 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761772707042.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761772723655</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761772721062.png" />
+  </item>
+
 </channel>
 </rss>
