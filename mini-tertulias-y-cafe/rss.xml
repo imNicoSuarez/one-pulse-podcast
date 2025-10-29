@@ -91,5 +91,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761772224563.png" />
   </item>
 
+
+  <item>
+    <title>¿JUSTICIA O CENSURA? El Megadebate de la Cultura de la Cancelación</title>
+    <description>[En este episodio de "Mini Tertulias y Café" se enciende el debate sobre la Cultura de la Cancelación: Sofi Luz la defiende apasionadamente como un acto de justicia social y empoderamiento para que los poderosos rindan cuentas, mientras que Marco Auguen la critica como una peligrosa "hoguera pública" y "pena capital digital" que fomenta la autocensura y destruye carreras por errores pasados. La discusión se centra en el dilema de quién decide qué es "malo", si existe la rehabilitación o si es un castigo sin vuelta atrás, invitando a la audiencia a definir si la cancelación es justicia o censura.</description>
+    <pubDate>>Wed, 29 Oct 2025 21:12:28 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761772341440.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761772348027</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761772346115.png" />
+  </item>
+
 </channel>
 </rss>
