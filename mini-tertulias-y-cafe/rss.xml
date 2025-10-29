@@ -4,7 +4,7 @@
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>n8n Automation Digest</title>
-    <link>https://news2podcast.com</link>
+    <link>https://imnicosuarez.github.io/one-pulse-podcast</link>
     <description>
          Welcome to *n8n Automation Digest*, the podcast inspired by the official n8n blog — your go-to source for mastering workflow automation.
 
@@ -33,7 +33,7 @@ Listen weekly, and if you haven’t yet, explore the full blog at n8n.io/blog.
     <itunes:image href="https://acosta1991.github.io/newsletter2podcast/n8n/logo.png" />
 
     <!-- Atom self-reference -->
-    <atom:link href="https://acosta1991.github.io/newsletter2podcast/n8n/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/rss.xml" rel="self" type="application/rss+xml" />
 
     <!-- Example item (episode) -->
 
