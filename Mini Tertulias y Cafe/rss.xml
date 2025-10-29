@@ -5,8 +5,7 @@
      xmlns:atom="http://www.w3.org/2005/Atom">
 
   <channel>
-    <!-- Atom self-link: pon aquí la URL pública de tu RSS -->
-    <atom:link href="https://raw.githubusercontent.com/imNicoSuarez/one-pulse-podcast/refs/heads/main/Mini%20Tertulias%20y%20Cafe/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tusitio.com/podcast/rss.xml" rel="self" type="application/rss+xml" />
 
     <title>Mini Tertulias &amp; Café</title>
     <link>https://www.ejemplo.com/podcast</link>
@@ -41,35 +40,31 @@ Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
       <link>https://www.ejemplo.com/podcast</link>
     </image>
 
-    <!-- Categorías: notar que el ampersand debe estar escapado -->
-    <itunes:category text="Technology">
-      <itunes:category text="Podcasting" />
-    </itunes:category>
+    <!-- Categorías válidas en iTunes / Apple Podcasts (reemplazá si querés otras) -->
+    <itunes:category text="Society &amp; Culture" />
+    <itunes:category text="Leisure" />
 
-    <itunes:category text="Games &amp; Hobbies">
-      <itunes:category text="Hobbies" />
-    </itunes:category>
+    <!-- explicit debe ser "true" o "false" -->
+    <itunes:explicit>false</itunes:explicit>
 
-    <itunes:explicit>no</itunes:explicit>
-
-    <!-- --- Episodio de ejemplo --- -->
+    <!-- Episodio de ejemplo -->
     <item>
       <title>E01 - Amistades Auténticas: Desentraña Red Flags y Green Flags</title>
 
       <description><![CDATA[
-¿Sabes realmente identificar si tus amistades te nutren o te agotan? En este episodio, exploramos las cruciales 'red flags' y 'green flags' que definen un vínculo genuino. Aprende a detectar la reciprocidad ausente, el juicio constante o el vampirismo emocional, y a valorar el apoyo incondicional, la escucha activa y la seguridad emocional. Descubre cómo proteger tu bienestar, establecer límites claros y cultivar relaciones que verdaderamente te hagan crecer. ¡Una guía esencial para navegar el complejo mundo de la amistad y construir lazos duraderos y saludables!
+¿Sabes realmente identificar si tus amistades te nutren o te agotan? En este episodio, exploramos las cruciales 'red flags' y 'green flags' que definen un vínculo genuino...
       ]]></description>
 
       <pubDate>Wed, 29 Oct 2025 13:21:57 -0300</pubDate>
 
+      <!-- enclosure: URL directa al mp3, length en bytes reales, type correcto -->
       <enclosure url="https://cdn.ejemplo.com/podcasts/episodio-01.mp3" length="1234567" type="audio/mpeg" />
 
       <guid isPermaLink="false">1761744117421</guid>
 
       <itunes:image href="https://www.ejemplo.com/assets/episodio-01-artwork.jpg" />
-
       <itunes:duration>00:06:12</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
+      <itunes:explicit>false</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
 
