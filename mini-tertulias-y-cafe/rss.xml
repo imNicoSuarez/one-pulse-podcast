@@ -3,48 +3,42 @@
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>n8n Automation Digest</title>
-    <link>https://news2podcast.com</link>
+    <title>Mini Tertulias &amp; Café</title>
+    <link>https://imnicosuarez.github.io/one-pulse-podcast/</link>
+    <language>es-ES</language>
+    <copyright>© 2025 Mini Tertulias &amp; Café</copyright>   
     <description>
-         Welcome to *n8n Automation Digest*, the podcast inspired by the official n8n blog — your go-to source for mastering workflow automation.
-
-Each episode breaks down key ideas from the blog, covering practical use cases, platform tips, and emerging trends in low-code automation. Whether you're building your first automation or scaling complex processes, this show helps you stay sharp, save time, and do more with less.
-
-Listen weekly, and if you haven’t yet, explore the full blog at n8n.io/blog.
+     Un café, unos minutos y una buena charla. En Mini tertulias y café, Sofi Luz y Marcos Augen comparten conversaciones cortas —de apenas 5 o 6 minutos— sobre temas cotidianos, reflexiones espontáneas y debates que surgen de la vida misma.
+    Cada episodio es una pausa en medio del día: el espacio perfecto para pensar, reír o simplemente escuchar algo distinto mientras disfrutás tu café.
+    Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
     </description>
-    <language>en</language>
 
     <!-- iTunes-specific metadata -->
-    <itunes:author>n8n Automation Digest | Smart workflows for modern teams</itunes:author>
+    <itunes:author>Nicolás Suárez</itunes:author>
     <itunes:summary>
-         Welcome to *n8n Automation Digest*, the podcast inspired by the official n8n blog — your go-to source for mastering workflow automation.
-
-Each episode breaks down key ideas from the blog, covering practical use cases, platform tips, and emerging trends in low-code automation. Whether you're building your first automation or scaling complex processes, this show helps you stay sharp, save time, and do more with less.
-
-Listen weekly, and if you haven’t yet, explore the full blog at n8n.io/blog.
+         Un café, unos minutos y una buena charla. En Mini tertulias y café, Sofi Luz y Marcos Augen comparten conversaciones cortas —de apenas 5 o 6 minutos— sobre temas cotidianos, reflexiones espontáneas y debates que surgen de la vida misma.
+         Cada episodio es una pausa en medio del día: el espacio perfecto para pensar, reír o simplemente escuchar algo distinto mientras disfrutás tu café.
+         Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
     </itunes:summary>
     <itunes:explicit>no</itunes:explicit>
     <itunes:owner>
-      <itunes:name>Acosta</itunes:name>
-      <itunes:email>luis.acosta@news2podcast.com</itunes:email>
+      <itunes:name>Nicolas Suarez</itunes:name>
+      <itunes:email>nicolassuarez.cabrera@gmail.com</itunes:email>
     </itunes:owner>
 
     <!-- Updated image -->
-    <itunes:image href="https://acosta1991.github.io/newsletter2podcast/n8n/logo.png" />
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/cover-minitertulias.png" />
 
     <!-- Atom self-reference -->
-    <atom:link href="https://acosta1991.github.io/newsletter2podcast/n8n/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/rss.xml" rel="self" type="application/rss+xml" />
 
-    <!-- Example item (episode) -->
-
-<item>
-  <title>Amistades Auténticas: Desentraña Red Flags y Green Flags</title>
-  <description>¿Sabes realmente identificar si tus amistades te nutren o te agotan? En este episodio, exploramos las cruciales 'red flags' y 'green flags' que definen un vínculo genuino. Aprende a detectar la reciprocidad ausente, el juicio constante o el vampirismo emocional, y a valorar el apoyo incondicional, la escucha activa y la seguridad emocional. Descubre cómo proteger tu bienestar, establecer límites claros y cultivar relaciones que verdaderamente te hagan crecer. ¡Una guía esencial para navegar el complejo mundo de la amistad y construir lazos duraderos y saludables!</description>
-  <pubDate>Wed, 29 Oct 2025 15:17:43 -0300</pubDate>
-  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1sOQ9-YFQftBY7vnONEMJ5nY6To_6Zbwt" length="1234567" type="audio/mpeg" />
-  <guid isPermaLink="false">1761751063980</guid>
-</item>
-
+     <item>
+       <title>Amistades Auténticas: Desentraña Red Flags y Green Flags</title>
+       <description>¿Sabes realmente identificar si tus amistades te nutren o te agotan? En este episodio, exploramos las cruciales 'red flags' y 'green flags' que definen un vínculo genuino. Aprende a detectar la reciprocidad ausente, el juicio constante o el vampirismo emocional, y a valorar el apoyo incondicional, la escucha activa y la seguridad emocional. Descubre cómo proteger tu bienestar, establecer límites claros y cultivar relaciones que verdaderamente te hagan crecer. ¡Una guía esencial para navegar el complejo mundo de la amistad y construir lazos duraderos y saludables!</description>
+       <pubDate>Wed, 29 Oct 2025 15:17:43 -0300</pubDate>
+       <enclosure url="https://drive.google.com/uc?export=download&amp;id=1sOQ9-YFQftBY7vnONEMJ5nY6To_6Zbwt" length="1234567" type="audio/mpeg" />
+       <guid isPermaLink="false">1761751063980</guid>
+     </item>
 
 
 
