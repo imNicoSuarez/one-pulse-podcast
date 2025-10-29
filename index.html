@@ -11,6 +11,23 @@
         :root {
             font-family: 'Inter', sans-serif;
         }
+        /* Estilos para asegurar que la imagen de portada se vea bien */
+        .podcast-cover {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        /* Estilo para la imagen del episodio en el reproductor */
+        .player-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+        /* Ocultar los controles de audio nativos en algunos navegadores si se usan controles personalizados, aunque aquí usamos los nativos */
+        #audio-player::-webkit-media-controls-enclosure {
+            border-radius: 0.75rem;
+        }
     </style>
     <script>
         // Configuración de Tailwind para usar el color principal
@@ -32,7 +49,11 @@
         let episodesList;
         let audioPlayer;
         let loadingMessage;
-
+        let audioErrorContainer;
+        let podcastCoverDisplay;
+        let playerImageContainer;
+        let defaultPodcastCoverUrl = 'https://placehold.co/100x100/4F46E5/FFFFFF?text=Podcast'; // Placeholder por defecto
+        
         /**
          * Inicializa la aplicación después de que el DOM esté completamente cargado.
          */
@@ -41,9 +62,15 @@
             episodesList = document.getElementById('episodes-list');
             audioPlayer = document.getElementById('audio-player');
             loadingMessage = document.getElementById('loading-message');
+            audioErrorContainer = document.getElementById('audio-error-container');
+            podcastCoverDisplay = document.getElementById('podcast-cover-display');
+            playerImageContainer = document.getElementById('player-image-container');
 
-            // Establecer un feed de ejemplo (NPR Up First) como marcador de posición
-            rssInput.value = 'https://feeds.simplecast.com/54PwtqA1'; 
+            // Agrega el manejador de errores al reproductor de audio
+            audioPlayer.addEventListener('error', handleAudioError);
+
+            // Establecer el feed del usuario como valor por defecto
+            rssInput.value = 'https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/rss.xml'; 
 
             // Asignar el evento al botón de carga
             document.getElementById('load-button').addEventListener('click', () => {
@@ -52,6 +79,9 @@
                     loadFeed(url);
                 }
             });
+
+            // Establecer la imagen de portada por defecto al inicio
+            podcastCoverDisplay.src = defaultPodcastCoverUrl;
         }
 
         /**
@@ -74,18 +104,53 @@
         }
 
         /**
+         * Maneja los errores del reproductor de audio, a menudo causados por URLs no válidas o CORS.
+         */
+        function handleAudioError(e) {
+            let errorText = 'Error de reproducción. Puede deberse a un formato incompatible, error de red o un enlace que no es de streaming.';
+
+            // Intenta obtener un código de error más específico
+            if (e.target.error) {
+                switch (e.target.error.code) {
+                    case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+                        errorText = 'La URL de audio no es compatible para la transmisión (streaming). Por favor, asegúrate de que sea un archivo de audio directo (.mp3, .m4a) y no un enlace de descarga (como Google Drive).';
+                        break;
+                    case e.target.error.MEDIA_ERR_NETWORK:
+                        errorText = 'Error de red al intentar cargar el audio. Verifica tu conexión.';
+                        break;
+                    case e.target.error.MEDIA_ERR_DECODE:
+                        errorText = 'El audio no pudo decodificarse o el formato no es compatible con tu navegador.';
+                        break;
+                    case e.target.error.MEDIA_ERR_ABORTED:
+                        // Abortado puede ocurrir al cambiar de episodio. No es un error de URL.
+                        return; 
+                    default:
+                        // Usar el mensaje genérico
+                }
+            }
+            
+            // Mostrar el mensaje de error de audio en el contenedor
+            audioErrorContainer.textContent = `🚫 ${errorText}`;
+            audioErrorContainer.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'p-4', 'rounded-lg', 'mt-4');
+            audioErrorContainer.classList.add('bg-red-100', 'text-red-700', 'p-4', 'rounded-lg', 'mt-4');
+            
+            // Ocultar el mensaje después de 8 segundos
+            setTimeout(() => {
+                audioErrorContainer.classList.add('hidden');
+            }, 8000);
+        }
+
+        /**
          * Carga y parsea el feed RSS desde la URL proporcionada.
          * @param {string} url - La URL del feed RSS.
          */
         async function loadFeed(url) {
             episodesList.innerHTML = '';
             audioPlayer.src = '';
+            audioErrorContainer.classList.add('hidden'); // Ocultar errores previos de audio
+            playerImageContainer.innerHTML = `<img src="${defaultPodcastCoverUrl}" class="player-cover opacity-50" alt="Placeholder">`;
             showMessage('Cargando episodios...', 'loading');
 
-            // NOTA SOBRE CORS: En un entorno de producción, es probable que se necesite 
-            // un proxy del lado del servidor para evitar problemas de CORS 
-            // (Intercambio de Recursos de Origen Cruzado) con los feeds de podcast reales.
-            // Aquí intentamos una búsqueda directa.
             try {
                 const response = await fetch(url);
                 if (!response.ok) {
@@ -97,6 +162,9 @@
             } catch (error) {
                 console.error('Error al cargar el feed:', error);
                 showMessage(`Error al cargar el feed. Verifica la URL y las restricciones de CORS. Mensaje: ${error.message}`, 'error');
+                // Restablecer el título del podcast
+                document.getElementById('podcast-title-display').textContent = 'Error al Cargar';
+                podcastCoverDisplay.src = defaultPodcastCoverUrl;
             }
         }
 
@@ -113,7 +181,26 @@
             const podcastTitle = channelTitleElement ? channelTitleElement.textContent : 'Podcast Desconocido';
             document.getElementById('podcast-title-display').textContent = podcastTitle;
             
-            // 2. Obtener los elementos de los episodios
+            // 2. Obtener la imagen de portada del podcast (Channel Image)
+            let podcastImageUrl = defaultPodcastCoverUrl;
+            
+            // 2.1 Buscar en <itunes:image> (Común en feeds de podcast)
+            const itunesImage = xmlDoc.querySelector('channel > itunes\\:image');
+            if (itunesImage && itunesImage.getAttribute('href')) {
+                podcastImageUrl = itunesImage.getAttribute('href');
+            } else {
+                // 2.2 Buscar en <image> standard
+                const standardImage = xmlDoc.querySelector('channel > image > url');
+                if (standardImage && standardImage.textContent) {
+                    podcastImageUrl = standardImage.textContent;
+                }
+            }
+            
+            podcastCoverDisplay.src = podcastImageUrl;
+            playerImageContainer.innerHTML = `<img src="${podcastImageUrl}" class="player-cover opacity-50" alt="Cover Podcast">`;
+
+
+            // 3. Obtener los elementos de los episodios
             const items = xmlDoc.querySelectorAll('item');
 
             if (items.length === 0) {
@@ -132,8 +219,15 @@
                 const enclosure = item.querySelector('enclosure');
                 const audioUrl = enclosure ? enclosure.getAttribute('url') : null;
 
+                // Buscar la imagen del episodio (priorizar itunes:image a nivel de item)
+                let episodeImageUrl = podcastImageUrl; // Usar la imagen del podcast como fallback
+                const itemItunesImage = item.querySelector('itunes\\:image');
+                if (itemItunesImage && itemItunesImage.getAttribute('href')) {
+                    episodeImageUrl = itemItunesImage.getAttribute('href');
+                }
+
                 if (audioUrl) {
-                    const episodeElement = createEpisodeElement(title, description, pubDate, audioUrl);
+                    const episodeElement = createEpisodeElement(title, description, pubDate, audioUrl, episodeImageUrl);
                     episodesList.appendChild(episodeElement);
                 }
             });
@@ -146,7 +240,7 @@
         /**
          * Crea el elemento HTML para un episodio individual.
          */
-        function createEpisodeElement(title, description, pubDate, audioUrl) {
+        function createEpisodeElement(title, description, pubDate, audioUrl, imageUrl) {
             // Formatear la fecha
             let formattedDate = '';
             if (pubDate) {
@@ -161,25 +255,37 @@
 
             // Crear el contenedor principal del episodio
             const episodeDiv = document.createElement('div');
-            episodeDiv.className = 'p-4 md:p-6 bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-4 sm:space-y-0';
+            // Añadir flex y alineación para la imagen
+            episodeDiv.className = 'p-4 md:p-6 bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300 flex items-center space-x-4';
             
+            // Contenedor de la imagen del episodio
+            const imageContainer = document.createElement('div');
+            imageContainer.className = 'flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden hidden sm:block';
+            imageContainer.innerHTML = `<img src="${imageUrl}" onerror="this.onerror=null;this.src='${defaultPodcastCoverUrl}';" class="w-full h-full object-cover" alt="Cover ${title}">`;
+
             // Contenido del episodio (Título, Fecha, Descripción)
             const contentDiv = document.createElement('div');
             contentDiv.className = 'sm:flex-grow min-w-0';
             contentDiv.innerHTML = `
-                <h3 class="text-xl font-semibold text-gray-900 truncate">${title}</h3>
-                ${formattedDate ? `<p class="text-sm text-primary font-medium mt-1">${formattedDate}</p>` : ''}
+                <h3 class="text-lg font-semibold text-gray-900 truncate">${title}</h3>
+                ${formattedDate ? `<p class="text-xs text-primary font-medium mt-1">${formattedDate}</p>` : ''}
                 <p class="text-gray-600 mt-2 text-sm line-clamp-2">${description.replace(/<[^>]*>?/gm, '')}</p>
             `;
 
-            // Botón de reproducción
+            // Botón de reproducción y contenedor
+            const controlsDiv = document.createElement('div');
+            controlsDiv.className = 'flex-shrink-0 ml-auto';
+            
             const playButton = document.createElement('button');
             playButton.textContent = 'Reproducir';
-            playButton.className = 'flex-shrink-0 mt-4 sm:mt-0 px-6 py-2 bg-primary text-white font-bold rounded-full shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 transition duration-150 whitespace-nowrap';
-            playButton.addEventListener('click', () => playEpisode(title, audioUrl));
+            playButton.className = 'px-4 py-2 bg-primary text-white font-bold rounded-full text-sm shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 transition duration-150 whitespace-nowrap';
+            playButton.addEventListener('click', () => playEpisode(title, audioUrl, imageUrl));
+            
+            controlsDiv.appendChild(playButton);
 
+            episodeDiv.appendChild(imageContainer);
             episodeDiv.appendChild(contentDiv);
-            episodeDiv.appendChild(playButton);
+            episodeDiv.appendChild(controlsDiv);
 
             return episodeDiv;
         }
@@ -188,22 +294,29 @@
          * Carga el audio del episodio en el reproductor y lo inicia.
          * @param {string} title - El título del episodio para mostrar.
          * @param {string} audioUrl - La URL del archivo de audio.
+         * @param {string} imageUrl - La URL de la imagen del episodio.
          */
-        function playEpisode(title, audioUrl) {
-            audioPlayer.src = audioUrl;
-            audioPlayer.title = title; // Establecer el título del episodio en el reproductor
-            document.getElementById('playing-title').textContent = title;
+        function playEpisode(title, audioUrl, imageUrl) {
+            // 1. Ocultar cualquier error anterior
+            audioErrorContainer.classList.add('hidden');
+            
+            // 2. Actualizar la imagen del reproductor
+            playerImageContainer.innerHTML = `<img src="${imageUrl}" onerror="this.onerror=null;this.src='${defaultPodcastCoverUrl}';" class="player-cover" alt="Cover ${title}">`;
 
-            // Intentar reproducir automáticamente
+            // 3. Cargar y reproducir audio
+            audioPlayer.src = audioUrl;
+            audioPlayer.title = title;
+            document.getElementById('playing-title').textContent = title;
+            document.getElementById('playing-source').textContent = `Fuente: ${audioUrl.substring(0, 40)}...`;
+
+            // 4. Intentar reproducir automáticamente
             const playPromise = audioPlayer.play();
 
             if (playPromise !== undefined) {
                 playPromise.then(() => {
-                    // La reproducción se inició correctamente
+                    // Reproducción iniciada
                 }).catch(error => {
-                    // La reproducción automática fue bloqueada (es común en navegadores)
                     console.warn("La reproducción automática fue bloqueada. El usuario debe presionar 'Play' en el control.");
-                    // Opcional: Mostrar un mensaje al usuario para que presione play
                 });
             }
         }
@@ -238,15 +351,35 @@
             <div id="loading-message" class="hidden"></div>
         </div>
 
-        <!-- Sección de Reproducción Actual -->
-        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mb-10 border-l-4 border-primary">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Reproduciendo Ahora:</h2>
-            <p id="playing-title" class="text-lg text-gray-700 mb-4 font-medium italic">Selecciona un episodio de la lista inferior.</p>
-            <audio id="audio-player" controls class="w-full rounded-lg" preload="none"></audio>
+        <!-- Sección de Reproducción Actual (Ahora con Imagen) -->
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl mb-10 border-l-4 border-primary flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center">
+            
+            <!-- Contenedor de la Imagen del Reproductor -->
+            <div id="player-image-container" class="flex-shrink-0 w-32 h-32 md:w-40 md:h-40 bg-gray-200 rounded-xl overflow-hidden shadow-lg">
+                <!-- Imagen por defecto se carga en JS -->
+                <img src="https://placehold.co/100x100/4F46E5/FFFFFF?text=Podcast" class="player-cover opacity-50" alt="Cover Podcast">
+            </div>
+
+            <div class="flex-grow min-w-0">
+                <h2 class="text-xl font-bold text-gray-900 mb-1">Reproduciendo Ahora:</h2>
+                <p id="playing-title" class="text-xl text-gray-700 mb-3 font-semibold italic truncate">Selecciona un episodio de la lista inferior.</p>
+                <p id="playing-source" class="text-xs text-gray-400 mb-3 truncate">Fuente: Ninguna</p>
+                
+                <audio id="audio-player" controls class="w-full rounded-lg" preload="none"></audio>
+                <!-- Contenedor para mensajes de error de audio -->
+                <div id="audio-error-container" class="hidden text-sm transition-all duration-300"></div> 
+            </div>
         </div>
 
         <!-- Sección de Lista de Episodios -->
-        <h2 id="podcast-title-display" class="text-3xl font-bold text-gray-800 mb-6">Episodios:</h2>
+        <div class="flex items-center space-x-4 mb-6">
+             <img id="podcast-cover-display" src="https://placehold.co/100x100/4F46E5/FFFFFF?text=Podcast" onerror="this.onerror=null;this.src='https://placehold.co/100x100/4F46E5/FFFFFF?text=Podcast';" class="podcast-cover rounded-lg shadow-md flex-shrink-0" alt="Podcast Cover">
+            <div>
+                <p class="text-lg text-gray-500 font-medium">Podcast:</p>
+                <h2 id="podcast-title-display" class="text-3xl font-bold text-gray-800">Cargando...</h2>
+            </div>
+        </div>
+       
         
         <div id="episodes-list" class="space-y-4">
             <!-- Los episodios se cargarán aquí -->
