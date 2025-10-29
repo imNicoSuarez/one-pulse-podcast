@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/"
-     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
-     xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
   <channel>
     <!-- Atom self-link: pon aquí la URL pública de tu RSS -->
-    <atom:link href="https://www.ejemplo.com/podcast/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://raw.githubusercontent.com/imNicoSuarez/one-pulse-podcast/refs/heads/main/Mini%20Tertulias%20y%20Cafe/rss.xml" rel="self" type="application/rss+xml" />
 
     <title>Mini Tertulias &amp; Café</title>
     <link>https://www.ejemplo.com/podcast</link>
@@ -44,8 +40,12 @@ Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
     </image>
 
     <!-- Categorías: la primarias pueden contener subcategorías anidadas -->
-    <itunes:category text="Entretenimiento">
-      <itunes:category text="News" />
+    <itunes:category text="Technology">
+      <itunes:category text="Podcasting" />
+    </itunes:category>
+
+     <itunes:category text="Games & Hobbies">
+      <itunes:category text="Hobbies" />
     </itunes:category>
 
     <itunes:explicit>no</itunes:explicit>
