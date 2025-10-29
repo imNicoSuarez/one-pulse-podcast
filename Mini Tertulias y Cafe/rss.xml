@@ -8,7 +8,7 @@
     <atom:link href="https://tusitio.com/podcast/rss.xml" rel="self" type="application/rss+xml" />
 
     <title>Mini Tertulias &amp; Café</title>
-    <link>https://imnicosuarez.github.io/one-pulse-podcast/index.html</link>
+    <link>https://imnicosuarez.github.io/one-pulse-podcast/</link>
     <language>es-ES</language>
     <copyright>© 2025 Mini Tertulias &amp; Café</copyright>
     <generator>Generador de Podcast Profesional</generator>
@@ -37,7 +37,7 @@ Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
     <image>
       <url>https://imnicosuarez.github.io/one-pulse-podcast/Mini%20Tertulias%20y%20Cafe/cover-minitertulias.png</url>
       <title>Mini Tertulias &amp; Café</title>
-      <link>https://imnicosuarez.github.io/one-pulse-podcast/index.html</link>
+      <link>https://imnicosuarez.github.io/one-pulse-podcast/</link>
     </image>
 
     <!-- Categorías válidas en iTunes / Apple Podcasts (reemplazá si querés otras) -->
