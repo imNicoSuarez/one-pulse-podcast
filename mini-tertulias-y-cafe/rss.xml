@@ -4,7 +4,7 @@
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>n8n Automation Digest</title>
-    <link>https://imnicosuarez.github.io/one-pulse-podcast</link>
+    <link>https://news2podcast.com</link>
     <description>
          Welcome to *n8n Automation Digest*, the podcast inspired by the official n8n blog — your go-to source for mastering workflow automation.
 
@@ -33,19 +33,141 @@ Listen weekly, and if you haven’t yet, explore the full blog at n8n.io/blog.
     <itunes:image href="https://acosta1991.github.io/newsletter2podcast/n8n/logo.png" />
 
     <!-- Atom self-reference -->
-    <atom:link href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://acosta1991.github.io/newsletter2podcast/n8n/rss.xml" rel="self" type="application/rss+xml" />
 
     <!-- Example item (episode) -->
 
+
 <item>
-  <title>Amistades Auténticas: Desentraña Red Flags y Green Flags</title>
-  <description>¿Sabes realmente identificar si tus amistades te nutren o te agotan? En este episodio, exploramos las cruciales 'red flags' y 'green flags' 
-       que definen un vínculo genuino. Aprende a detectar la reciprocidad ausente, el juicio constante o el vampirismo emocional, y a valorar el apoyo incondicional, la escucha activa y la seguridad emocional. Descubre cómo proteger tu bienestar, establecer límites claros y cultivar relaciones que verdaderamente te hagan crecer. ¡Una guía esencial para navegar el complejo mundo de la amistad y construir lazos duraderos y saludables</description>
-  <pubDate>Wed, 29 Oct 2025 15:17:43 -0300</pubDate>
-  <enclosure url="https://drive.google.com/uc?export=download&id=1x8wkoNGs_5IXX2mJHHXdaFX2avOyRMz5" length="1234567" type="audio/mpeg" />
-  <guid isPermaLink="false">1761751063980</guid>
+  <title>MCP will be the death of low-code automation, and other spooky stories</title>
+  <description>If you have feedback or want to build something similar, contact Luis at Luis.acosta@news2podcast.com. 
+
+In this episode of the n eight n Podcast, we dive deep into the complexities of Minimal Capability Protocol (MCP) and its impact on low-code automation. Inspired by Andrew Green's thought-provoking blog post, we explore the burgeoning world of AI agents and the challenges MCP faces, including significant security vulnerabilities and adoption hurdles. Our hosts engage in a lively discussion about what MCP entails, the implications of its immaturity for users, and the responsibilities that shift to vendors as they implement this evolving protocol. We also dissect the critical issues around cost management and the necessity for effective API interactions, as well as the limitations posed by a single-platform focus that could hinder multi-agent workflows. With a cautious outlook on MCP’s future adoption in production environments, this episode offers vital insights into the trends that will shape no-code automation and the crucial intersection between security, efficiency, and user experience. Join us as we navigate these pressing topics and equip you with knowledge to thrive in the ever-changing landscape of automation technology.</description>
+  <pubDate>Sun, 27 Jul 2025 21:01:17 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=112HCTM-uHxZDyPieQyGbSih0w3bW2LJw" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1753650077031</guid>
 </item>
 
+
+<item>
+  <title>7 Best AI Agent Builders: An Expert Market Breakdown</title>
+  <description>If you have feedback or want to build something similar, contact Luis at Luis.acosta@news2podcast.com. 
+
+In this episode of the n eight n Podcast, we dive deep into the evolving landscape of AI agent builders, inspired by an illuminating blog article from Yulia Dmitrievna, Eduard Parsadanyan, and Andrew Green. Join us as we unravel the complexities of these powerful tools that help organizations harness AI's full potential while overcoming integration challenges. We discuss the two main categories of AI agent builders—workflow-based and non-workflow-based—and detail how they effectively blend large language models with operational logic to deliver reliable, structured outputs.
+
+We'll break down various platforms, from innovative startups like Dify and Vellum to established players like Camunda, illustrating how their unique functionalities can cater to differing organizational needs. You'll learn why utilizing an AI agent builder can save time and resources, helping teams transition swiftly from proof of concept to production-ready solutions. 
+
+Additionally, we provide key insights on selecting the right AI agent builder for your specific requirements, considering factors like ease of use, integrations, and cost efficiency. Whether you’re a technical expert or a business leader looking to enhance workflow automation, this episode equips you with the knowledge to optimize your AI deployment strategy. Tune in for a rich discussion filled with practical takeaways and expert analysis!</description>
+  <pubDate>Sun, 27 Jul 2025 21:08:55 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1246NcP7nrOuvCIfKl5jRwUIqyrjJoSPB" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1753650535199</guid>
+</item>
+
+
+<item>
+  <title>Beyond the Hype: 10 Best AI Agents That Truly Work</title>
+  <description>If you have feedback or want to build something similar, contact Luis at Luis.acosta@news2podcast.com. 
+
+In this episode of the n eight n Podcast, hosts Alex and Chris take a comprehensive look at the latest advancements in AI agents and their transformative potential heading into 2025. Discover the five powerful types of AI agents making waves this year, including software engineering agents like Google Jules and Cline, dynamic voice interaction tools from ElevenLabs and Hume.ai, groundbreaking research agents such as Perplexity and Kortix AI Suna, data analysis tools like Julius AI and BambooAI, and innovative UI navigation solutions with Convergence AI Proxy and Skyvern. 
+
+Listeners will gain insights into how these technologies are reshaping workflows, enabling automation, and the importance of seamless integration within existing systems, particularly through the versatile platform n eight n. With user-friendly customization options, n eight n empowers individuals to create tailored AI solutions for their specific business needs. Join us as we explore not only the capabilities of these agents but also how anyone can harness their power to enhance productivity and efficiency in their operations.</description>
+  <pubDate>Sun, 27 Jul 2025 21:19:59 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=10ZJ44iriiwi6d_r1Qp7bKCaKj7nJ3xg9" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1753651199128</guid>
+</item>
+
+
+<item>
+  <title>What Is AI Sentiment Analysis and How to Build It with n8n?</title>
+  <description>If you have feedback or want to build something similar, contact Luis at Luis.acosta@news2podcast.com. You can also support my work using the following link to try ElevenLabs and create your own project: https://try.elevenlabs.io/ds0cvdfiufax
+
+In this episode of n eight n Podcasts, hosts Alex and Chris unpack the transformative technology of AI sentiment analysis. They delve into what sentiment analysis is, how it uses natural language processing and machine learning to interpret the emotional tone behind text, and why this capability is crucial for modern businesses. With advancements in large language models and user-friendly automation platforms like n eight n, even those without extensive data science backgrounds can now leverage sentiment analysis for decision-making. From tracking brand perception to automating customer support, the hosts share practical examples and illustrate how to build effective workflows using intuitive tools. Join them as they explore the various types of sentiment analysis, the efficiency of multi-agent systems, and the power of automation in gaining actionable insights from text data—all without the need for extensive coding knowledge. This enlightening discussion provides a comprehensive overview for businesses looking to harness the power of AI sentiment analysis in their strategies.</description>
+  <pubDate>Tue, 29 Jul 2025 17:32:41 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1YiCdv1AQXhxq4eAsG9W2QM-s6WnBep5Q" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1753810361306</guid>
+</item>
+
+
+
+<item>
+  <title>New plan, no active workflow limits — n8n's new pricing explained.</title>
+  <description>If you have feedback or want to build something similar, contact Luis at Luis.acosta@news2podcast.com. You can also support my work using the following link to try ElevenLabs and create your own project: https://try.elevenlabs.io/ds0cvdfiufax
+
+In this episode of the N Eight N Podcast, hosts Alex and Chris delve into the recent transformative updates to N Eight N's pricing structure, spurred by extensive community feedback. They discuss how traditional pricing models often hinder innovation and experimentation, leading N Eight N to overhaul its approach. Listeners will learn about the elimination of limits on active workflows across all plans, allowing for unlimited creativity without the worry of mounting costs. The introduction of the Business Plan is also highlighted, which caters to growing teams with advanced collaboration tools and enterprise-grade security features. Furthermore, Chris and Alex break down how the new execution-based pricing model enables enterprises to scale without budget constraints. Fostering a climate of innovation, collaboration, and cost predictability, this episode is a must-listen for anyone interested in maximizing their automation potential with N Eight N. Tune in to discover how these changes can revolutionize the way you build and scale automations!</description>
+  <pubDate>Tue, 12 Aug 2025 07:22:40 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1I0L5wqMABuN2JQw2-5ZiOj8z3mSUvJYH" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1754983360655</guid>
+</item>
+
+
+<item>
+  <title>12 Best Autonomous AI Agents – 2025’s Top Picks</title>
+  <description>In this episode of n eight n Podcasts, we explore the exhilarating domain of autonomous AI agents and highlight twelve groundbreaking tools projected to reshape workflows by 2025. Join hosts Alex and his co-host as they dissect how these intelligent agents can autonomously handle repetitive tasks, allowing you to focus on more engaging aspects of your work. The conversation delves into the pivotal differences between traditional and autonomous AI, emphasizing the importance of balancing oversight with freedom in various business environments. 
+
+Listeners will discover the core characteristics of autonomous AI agents, such as their goal-driven nature and strategic planning capabilities, alongside practical use cases from research to decision-making that highlight their efficiency. The hosts introduce a diverse lineup of top autonomous agents tailored for different industries, including innovative platforms like Lindy AI and VAPI, illustrating how these tools can seamlessly integrate into your existing operations. 
+
+Finally, we discuss how n eight n empowers users to build customized agents that fit specific business needs, ensuring performance through built-in evaluation frameworks. Tune in for an enlightening overview that teases the potential of AI to transform the future of work, and gain insights into how you can implement these advancements in your own organization! Don’t forget to check out n eight n dot io for more inspiration and subscribe for future episodes that will keep you at the forefront of technology.</description>
+  <pubDate>Fri, 22 Aug 2025 19:12:16 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1LKPym4CVaiKQpKBhVLrM88nK4dqa0oEG" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1755889936883</guid>
+</item>
+
+
+
+<item>
+  <title>Practical Evaluation Methods for Enterprise-Ready LLMs</title>
+  <description>In this episode of n eight n Podcasts, hosts Alex and Chris delve into the critical topic of evaluating enterprise-ready Large Language Models (LLMs). With the rapid integration of AI into various applications, understanding how to assess the accuracy, safety, and reliability of LLMs has never been more essential. They outline practical evaluation methods, categorizing them into Matches and Similarity, Code Evaluations, LLM-as-Judge, and Safety Evaluations, each tailored to different use cases—from generating technical documents to automating internal processes. Listeners will learn how to implement these evaluations within n eight n, ensuring AI workflows are both effective and trustworthy. Tune in to discover how to elevate your automation strategies with robust evaluation techniques, ensuring your applications are truly production-ready. Don’t miss out on actionable insights and tips for leveraging n eight n's features for optimal performance!</description>
+  <pubDate>Fri, 05 Sep 2025 19:27:37 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1C10DQF7nuksLdofi5-liEb82IzHznW3h" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1757100457664</guid>
+</item>
+
+
+<item>
+  <title>n8n raises $180m to get AI closer to value with orchestration</title>
+  <description>Sponsor: www.genflowdocs.com
+
+In this episode of the n eight n Podcast, we explore the groundbreaking news that n eight n has successfully raised $180 million in Series C funding, catapulting its valuation to an impressive $2.5 billion. Join us as we unpack the implications of this funding led by Accel and supported by a host of other investors. We dive deep into the evolving landscape of AI, discussing the critical balance between automation and rule-based systems that n eight n masterfully navigates. 
+
+Discover how n eight n's approach to flexible AI orchestration fosters collaboration between technical builders and domain experts, ensuring that organizations can adapt to their evolving needs effectively. We'll highlight the significance of community support and how n eight n aims to become the go-to platform for AI deployment across all scales, from individual innovators to large organizations like the United Nations. 
+
+As we look ahead to an exciting future, find out how this recent funding will enhance user support, expand integrations, and nurture an ecosystem where users can thrive. Tune in to learn why the future of AI in the workplace is as essential as mastering tools like Excel, and how n eight n is positioning itself to lead the charge in AI and automation. Don't forget to like and subscribe for more insights!</description>
+  <pubDate>Fri, 24 Oct 2025 20:36:26 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1OKrrPJgJWqqWOpbMFj1YHGnaT5aihoq7" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1761338186979</guid>
+</item>
+
+
+<item>
+  <title>AI Agent Orchestration Frameworks: Which One Works Best for You?</title>
+  <description>Sponsor: www.genflowdocs.com
+
+In this episode of the n eight n Podcast, hosts Alex and Chris take listeners on an intriguing journey into the realm of AI agent orchestration frameworks. Inspired by a recent blog post from the n eight n team, they break down the concept of using multiple specialized AI agents to tackle complex workflows. Discover why traditional single-agent models can fall short in efficiency, and learn how frameworks designed to coordinate smaller agents can enhance task management and reduce costs.
+
+Join Alex and Chris as they outline the five essential capabilities that make these frameworks effective, including state management, communication protocols, orchestration patterns, tool integration, and error recovery. They’ll also categorize 11 notable frameworks ranging from visual low-code tools to enterprise infrastructure platforms, giving you a clearer view of the options available.
+
+Featuring tools like n eight n, Flowise, and Amazon Bedrock Agents, the episode highlights the key features and benefits of each, guiding listeners through the decision-making process for selecting the right framework for their needs. Whether you are a developer seeking precise control or a business looking for robust solutions, this episode is packed with insights that can streamline your operations and boost productivity.
+
+Tune in for a deep dive that is not only informative but also practical, as the hosts encourage further exploration into building systems with AI agents, all while reminding listeners that this podcast itself was created using n eight n. Don't forget to like and subscribe for more engaging content!</description>
+  <pubDate>Fri, 24 Oct 2025 20:45:17 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1Idt7sg2uxDWy6m1wfDB0Cqi8K2AE3EIx" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1761338717631</guid>
+</item>
+
+
+<item>
+  <title>Implementing Rerankers in Your AI Workflows</title>
+  <description>Sponsor: www.genflowdocs.com
+
+In this episode of n eight n Podcasts, co-hosts Alex and Chris delve into the intricacies of advanced retrieval-augmented generation (RAG) and its impact on workflow automation. They start by exploring the significance of document ordering in retrieval processes and how reranking models enhance the user experience by prioritizing the most relevant results. Through relatable examples, such as search engines, they highlight the critical nature of user expectations and satisfaction when searching for information.
+
+Listeners will gain insights into the reranking process, discussing the deployment options available for organizations, including API models, cloud-hosted options, and self-hosted solutions. Alex and Chris also review popular tools for implementing rerankers, both open-source and commercial, as well as the architectural considerations of bi-encoders and cross-encoders. They further touch on the use of large language models for reranking and how users can easily implement this feature in their workflows using the n eight n platform.
+
+Join them as they conclude that the thoughtful integration of grouping and reranking documents not only enhances retrieval efficiency but also creates intelligent workflows, paving the way for improved productivity and automation. Don't miss this opportunity to deepen your understanding of RAG technology and how it can revolutionize your approach to information retrieval!</description>
+  <pubDate>Fri, 24 Oct 2025 20:49:36 GMT</pubDate>
+  <enclosure url="https://drive.google.com/uc?export=download&amp;id=1qhwoiYnezTsk2KzxNQnhU6eDohI82xOx" length="1234567" type="audio/mpeg" />
+  <guid isPermaLink="false">1761338976471</guid>
+</item>
 
 </channel>
 </rss>
