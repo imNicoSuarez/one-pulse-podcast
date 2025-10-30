@@ -56,6 +56,10 @@
         
         // Constante para el espacio de nombres de iTunes
         const ITUNES_NAMESPACE = 'http://www.itunes.com/dtds/podcast-1.0.dtd';
+
+        // Almacena la lista completa de episodios y el índice actual para la reproducción secuencial
+        let currentEpisodes = [];
+        let currentPlayingIndex = -1;
         
         /**
          * Inicializa la aplicación después de que el DOM esté completamente cargado.
@@ -71,11 +75,14 @@
 
             // Agrega el manejador de errores al reproductor de audio
             audioPlayer.addEventListener('error', handleAudioError);
+            
+            // Lógica de reproducción automática del siguiente episodio
+            audioPlayer.addEventListener('ended', playNextEpisode);
 
             // Establecer el feed del usuario como valor por defecto
             rssInput.value = 'https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/rss.xml'; 
 
-            // Asignar el evento al botón de carga
+            // Asignar el evento al botón de carga (Aún útil si el usuario quiere cambiar el feed)
             document.getElementById('load-button').addEventListener('click', () => {
                 const url = rssInput.value.trim();
                 if (url) {
@@ -85,7 +92,30 @@
 
             // Establecer la imagen de portada por defecto al inicio
             podcastCoverDisplay.src = defaultPodcastCoverUrl;
+            
+            // *** NUEVA CARGA AUTOMÁTICA AL INICIO ***
+            loadFeed(rssInput.value.trim()); 
         }
+
+        /**
+         * Intenta reproducir el siguiente episodio en la lista.
+         */
+        function playNextEpisode() {
+            const nextIndex = currentPlayingIndex + 1;
+            
+            if (nextIndex < currentEpisodes.length) {
+                const nextEpisode = currentEpisodes[nextIndex];
+                // Llama a playEpisode con el índice para asegurar la secuencia
+                playEpisode(nextEpisode.title, nextEpisode.audioUrl, nextEpisode.imageUrl, nextIndex);
+                console.log(`Reproduciendo automáticamente el siguiente episodio: ${nextEpisode.title}`);
+            } else {
+                // Si no hay más episodios, actualiza el estado del reproductor
+                document.getElementById('playing-title').textContent = 'Lista de reproducción terminada.';
+                document.getElementById('playing-source').textContent = 'Fuente: Ninguna';
+                currentPlayingIndex = -1; // Reiniciar el índice
+            }
+        }
+
 
         /**
          * Muestra mensajes de estado (ej: cargando, error).
@@ -150,6 +180,8 @@
         async function loadFeed(url) {
             episodesList.innerHTML = '';
             audioPlayer.src = '';
+            currentEpisodes = []; // Limpiar la lista de episodios global
+            currentPlayingIndex = -1; // Resetear el índice
             audioErrorContainer.classList.add('hidden'); // Ocultar errores previos de audio
             playerImageContainer.innerHTML = `<img src="${defaultPodcastCoverUrl}" class="player-cover opacity-50" alt="Placeholder">`;
             showMessage('Cargando episodios...', 'loading');
@@ -188,7 +220,6 @@
             let podcastImageUrl = defaultPodcastCoverUrl;
             
             // 2.1 Buscar en <itunes:image> (Usando getElementsByTagNameNS para mayor compatibilidad)
-            // Esto busca la etiqueta 'image' con el namespace de iTunes
             const itunesImageElements = xmlDoc.getElementsByTagNameNS(ITUNES_NAMESPACE, 'image');
             const channelItunesImage = itunesImageElements.length > 0 ? itunesImageElements[0] : null;
 
@@ -203,7 +234,6 @@
             }
             
             podcastCoverDisplay.src = podcastImageUrl;
-            // Asegurarse de que la imagen del reproductor también se actualice con la portada del podcast (como fallback inicial)
             playerImageContainer.innerHTML = `<img src="${podcastImageUrl}" class="player-cover opacity-50" alt="Cover Podcast">`;
 
 
@@ -215,9 +245,10 @@
                 return;
             }
 
-            episodesList.innerHTML = ''; // Limpiar la lista antes de añadir nuevos
+            episodesList.innerHTML = ''; // Limpiar la lista de renderizado
+            currentEpisodes = []; // Reiniciar la lista de datos
 
-            items.forEach(item => {
+            items.forEach((item, index) => {
                 const title = item.querySelector('title')?.textContent || 'Título Desconocido';
                 const description = item.querySelector('description')?.textContent || 'Sin descripción.';
                 const pubDate = item.querySelector('pubDate')?.textContent || '';
@@ -238,7 +269,15 @@
                 }
 
                 if (audioUrl) {
-                    const episodeElement = createEpisodeElement(title, description, pubDate, audioUrl, episodeImageUrl);
+                    // Almacenar los datos del episodio en la lista global
+                    currentEpisodes.push({
+                        title: title,
+                        audioUrl: audioUrl,
+                        imageUrl: episodeImageUrl
+                    });
+
+                    // Crear y añadir el elemento al DOM
+                    const episodeElement = createEpisodeElement(title, description, pubDate, audioUrl, episodeImageUrl, index);
                     episodesList.appendChild(episodeElement);
                 }
             });
@@ -251,7 +290,7 @@
         /**
          * Crea el elemento HTML para un episodio individual.
          */
-        function createEpisodeElement(title, description, pubDate, audioUrl, imageUrl) {
+        function createEpisodeElement(title, description, pubDate, audioUrl, imageUrl, index) {
             // Formatear la fecha
             let formattedDate = '';
             if (pubDate) {
@@ -290,7 +329,8 @@
             const playButton = document.createElement('button');
             playButton.textContent = 'Reproducir';
             playButton.className = 'px-4 py-2 bg-primary text-white font-bold rounded-full text-sm shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-primary focus:ring-opacity-50 transition duration-150 whitespace-nowrap';
-            playButton.addEventListener('click', () => playEpisode(title, audioUrl, imageUrl));
+            // Pasa el índice del episodio para la reproducción secuencial
+            playButton.addEventListener('click', () => playEpisode(title, audioUrl, imageUrl, index));
             
             controlsDiv.appendChild(playButton);
 
@@ -306,21 +346,25 @@
          * @param {string} title - El título del episodio para mostrar.
          * @param {string} audioUrl - La URL del archivo de audio.
          * @param {string} imageUrl - La URL de la imagen del episodio.
+         * @param {number} index - El índice del episodio en la lista global.
          */
-        function playEpisode(title, audioUrl, imageUrl) {
+        function playEpisode(title, audioUrl, imageUrl, index) {
             // 1. Ocultar cualquier error anterior
             audioErrorContainer.classList.add('hidden');
             
-            // 2. Actualizar la imagen del reproductor
+            // 2. Almacenar el índice del episodio que se está reproduciendo
+            currentPlayingIndex = index;
+            
+            // 3. Actualizar la imagen del reproductor
             playerImageContainer.innerHTML = `<img src="${imageUrl}" onerror="this.onerror=null;this.src='${defaultPodcastCoverUrl}';" class="player-cover" alt="Cover ${title}">`;
 
-            // 3. Cargar y reproducir audio
+            // 4. Cargar y reproducir audio
             audioPlayer.src = audioUrl;
             audioPlayer.title = title;
             document.getElementById('playing-title').textContent = title;
             document.getElementById('playing-source').textContent = `Fuente: ${audioUrl.substring(0, 40)}...`;
 
-            // 4. Intentar reproducir automáticamente
+            // 5. Intentar reproducir automáticamente
             const playPromise = audioPlayer.play();
 
             if (playPromise !== undefined) {
