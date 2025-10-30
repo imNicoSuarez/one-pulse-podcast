@@ -92,5 +92,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761823491884.png" />
   </item>
 
+
+  <item>
+    <title>El Costo Oculto del DIY: Evita Desastres y Ahorra de Verdad</title>
+    <description>[¿Alguna vez un proyecto DIY te salió terriblemente mal? En este episodio, desentrañamos el fenómeno del "Hágalo Usted Mismo" fallido, un desastre común que transforma pequeños arreglos en costosas reparaciones. Exploramos las causas: desde la sobreconfianza digital hasta herramientas inadecuadas, y sus graves consecuencias económicas, materiales y emocionales. Aprende a identificar tus límites y cuándo es mejor dejarlo en manos de un experto para ahorrar tiempo, dinero y frustraciones. ¡No te pierdas esta guía para evitar el eco del martillo roto en tu hogar!</description>
+    <pubDate>>Thu, 30 Oct 2025 15:32:03 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761838300238.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761838323424</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761838320732.png" />
+  </item>
+
 </channel>
 </rss>
