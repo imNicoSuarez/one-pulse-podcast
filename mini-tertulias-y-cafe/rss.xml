@@ -27,7 +27,7 @@
     </itunes:owner>
 
     <!-- Updated image -->
-    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/cover-minitertulias.png" />
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/cover-minitertulias-2.png" />
 
     <!-- Atom self-reference -->
     <atom:link href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/rss.xml" rel="self" type="application/rss+xml" />
