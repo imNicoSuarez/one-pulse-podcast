@@ -82,5 +82,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761772721062.png" />
   </item>
 
+
+  <item>
+    <title>Ética para Máquinas: ¿La Filosofía Salvará a la Inteligencia Artificial?</title>
+    <description>[En un fascinante e intenso episodio de "Mini Tertulias y Café", Sofi Luz y Marco Auguen debaten sobre el papel de la filosofía en la Inteligencia Artificial (IA): Sofi defiende el concepto de la filosofía como la "brújula de la IA", citando expertos que aseguran que ayuda a "desmantelar sesgos" para crear máquinas éticas "por diseño" y que, incluso, la conciencia artificial es posible, abriendo una ventana a la coexistencia y la potenciación mutua; por su parte, Marco se muestra escéptico y alerta sobre los peligros de la "caja negra" de los algoritmos, advirtiendo que la promesa de "valores" puede ser puro verso, y que la IA avanza "sin control", generando riesgos como la ansiedad laboral, la desigualdad y el peligro de que los deepfakes destruyan la confianza y nos superen como especie. El episodio cierra invitando a la audiencia a decidir si la ética salvará a la IA o si es solo un intento de ponerle un moñito a un problema colosal.</description>
+    <pubDate>>Thu, 30 Oct 2025 11:24:55 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761823478775.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761823495022</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761823491884.png" />
+  </item>
+
 </channel>
 </rss>
