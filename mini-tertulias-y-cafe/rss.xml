@@ -102,5 +102,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761838320732.png" />
   </item>
 
+
+  <item>
+    <title>El Engaño del Ahorro: Por Qué Nos Frustra No Comprar una Oferta Innecesaria</title>
+    <description>[¿Alguna vez sentiste la punzada de arrepentimiento por no comprar algo "solo porque estaba en oferta", incluso si no lo necesitabas? Explora la compleja psicología detrás de esta frustración moderna. Analizamos el miedo a perderse algo (FOMO), el efecto anclaje y cómo el marketing explota nuestras debilidades para impulsar compras impulsivas. Descubre el verdadero costo de esa 'ganga' y cómo afecta tu bolsillo y bienestar. Aprende a navegar el bombardeo de descuentos con una mente más consciente.</description>
+    <pubDate>>Fri, 31 Oct 2025 09:04:52 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761901476557.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761901492737</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761901490668.png" />
+  </item>
+
 </channel>
 </rss>
