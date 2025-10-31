@@ -121,5 +121,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761901490668.png" />
   </item>
 
+
+  <item>
+    <title>Halloween Desencadenado: Un Viaje del Samhain Ancestral al Fenómeno Global</title>
+    <description>[Adéntrate en el fascinante origen de Halloween, desde el ancestral rito celta del Samhain hasta su transformación en un coloso cultural y económico global. Descubre cómo la migración, la cristiandad y el consumismo moldearon esta celebración, que hoy mueve miles de millones de dólares y cautiva a millones. Un análisis profundo sobre sus raíces, su impacto moderno y la inquebrantable magia de la Noche de Brujas. ¿Hay algo más allá de los dulces y disfraces?</description>
+    <pubDate>>Fri, 31 Oct 2025 13:57:01 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761919003766.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761919021120</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761919018559.png" />
+  </item>
+
 </channel>
 </rss>
