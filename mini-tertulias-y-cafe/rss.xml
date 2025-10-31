@@ -6,13 +6,20 @@
     <title>Mini Tertulias &amp; Café</title>
     <link>https://imnicosuarez.github.io/one-pulse-podcast/</link>
     <language>es-ES</language>
-    <copyright>© 2025 Mini Tertulias &amp; Café</copyright>   
+       
+    <copyright>© 2025 Mini Tertulias &amp; Café</copyright> 
+       
     <description>
      Un café, unos minutos y una buena charla. En Mini tertulias y café, Sofi Luz y Marcos Augen comparten conversaciones cortas —de apenas 5 o 6 minutos— sobre temas cotidianos, reflexiones espontáneas y debates que surgen de la vida misma.
     Cada episodio es una pausa en medio del día: el espacio perfecto para pensar, reír o simplemente escuchar algo distinto mientras disfrutás tu café.
     Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
     </description>
-
+    
+   <!-- Categoria -->  
+    <itunes:category text="Society &amp; Culture">
+      <itunes:category text="Philosophy"/>
+    </itunes:category>
+       
     <!-- iTunes-specific metadata -->
     <itunes:author>Nicolás Suárez</itunes:author>
     <itunes:summary>
@@ -20,7 +27,9 @@
          Cada episodio es una pausa en medio del día: el espacio perfecto para pensar, reír o simplemente escuchar algo distinto mientras disfrutás tu café.
          Mini tertulias y café: pequeñas charlas, grandes ideas. 💬
     </itunes:summary>
+       
     <itunes:explicit>no</itunes:explicit>
+       
     <itunes:owner>
       <itunes:name>Nicolas Suarez</itunes:name>
       <itunes:email>nicolassuarez.cabrera@gmail.com</itunes:email>
