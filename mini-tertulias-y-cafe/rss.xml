@@ -131,5 +131,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761919018559.png" />
   </item>
 
+
+  <item>
+    <title>Siesta Obligatoria: ¿Revolución Laboral o Utopía de la Productividad?</title>
+    <description>[¿Debería la siesta ser obligatoria en el trabajo o la escuela? Exploramos la ciencia detrás de los beneficios cognitivos de un breve descanso diurno, desde la mejora de la memoria hasta la reducción del estrés. Analizamos los desafíos culturales y logísticos de su implementación, y debatimos si el descanso es una inversión crucial o una utopía inalcanzable en nuestra búsqueda de mayor productividad y bienestar. Descubre las perspectivas y el futuro de una cultura del descanso consciente.</description>
+    <pubDate>>Sat, 01 Nov 2025 12:21:01 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1761999641477.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1761999661050</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761999659298.png" />
+  </item>
+
 </channel>
 </rss>
