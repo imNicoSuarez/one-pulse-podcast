@@ -131,5 +131,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1761919018559.png" />
   </item>
 
+
+  <item>
+    <title>Visto y Ansiedad: El Impacto Oculto de la Comunicación Instantánea</title>
+    <description>[Descubre cómo el doble check azul y los audios extensos transforman la comunicación digital en una fuente incesante de estrés. Analizamos la presión por la inmediatez, su impacto en tu vida personal y profesional, y cómo puedes recuperar el control de tu bienestar digital. ¡Es hora de desconectar del agobio y redefinir la cortesía digital!</description>
+    <pubDate>>Sun, 02 Nov 2025 12:42:19 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762087325712.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1762087339550</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762087336836.png" />
+  </item>
+
 </channel>
 </rss>
