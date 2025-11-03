@@ -141,5 +141,15 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762087336836.png" />
   </item>
 
+
+  <item>
+    <title>Empleos Bizarros: Un Viaje por la Geografía Surrealista del Trabajo Moderno</title>
+    <description>[Explora el fascinante y a menudo hilarante mundo de los trabajos más extraños y absurdos. Desde probadores de toboganes hasta "olores de axilas", descubre cómo la economía de nicho y la creatividad humana dan forma a roles impensables. Sumérgete en historias reales y reflexiona sobre el futuro laboral. ¡Prepárate para sorprenderte con la adaptabilidad humana en el mercado de trabajo!</description>
+    <pubDate>Mon, 03 Nov 2025 09:03:50 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762160608993.mp3" length="4123211" type="audio/mpeg" />
+    <guid isPermaLink="false">1762160630240</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762160627141.png" />
+  </item>
+
 </channel>
 </rss>
