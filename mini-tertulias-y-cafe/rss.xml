@@ -148,5 +148,18 @@
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762160627141.png" />
   </item>
 
+
+  <item>
+    <title>Presentación, Hola esto es Mini Tertulias y Café.</title>
+    <description>Un café, unos minutos y una buena charla. En Mini tertulias y café, Sofi Luz y Marcos Augen comparten conversaciones cortas —de apenas 5 o 6 minutos— sobre temas cotidianos, reflexiones espontáneas y debates que surgen de la vida misma.
+Cada episodio es una pausa en medio del día: el espacio perfecto para pensar, reír o simplemente escuchar algo distinto mientras disfrutás tu café.
+    Mini tertulias y café: pequeñas charlas, grandes ideas. 💬</description>
+    <pubDate>Mon, 03 Nov 2025 14:36:48 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762180589191.mp3" length="3278515" type="audio/mpeg" />
+    <guid isPermaLink="false">1762180608395</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762180605358.png" />
+    <itunes:episodeType>trailer</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
