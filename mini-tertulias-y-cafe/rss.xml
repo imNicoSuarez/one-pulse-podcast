@@ -183,5 +183,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Desenredando el Misterio: La Inevitable Ciencia Detrás de tus Cables Anudados</title>
+    <description>¿Harto de desatar cables en tu bolsillo? Descubre que no es mala suerte, ¡es física pura! Analizamos el estudio seminal de la UC San Diego sobre la probabilidad y topología que explican por qué tus auriculares y cargadores se enredan solos. Aprende cómo la longitud y el movimiento aleatorio son claves en esta frustración cotidiana y qué soluciones ofrece la ciencia. ¡Entiende el enigma de la maraña y por qué es un fenómeno predecible!</description>
+    <pubDate>Wed, 05 Nov 2025 09:02:57 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762333357899.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1762333377382</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762333374065.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
