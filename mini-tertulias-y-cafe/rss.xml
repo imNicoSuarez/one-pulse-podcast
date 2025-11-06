@@ -194,5 +194,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Nomofobia: La Ansiedad de la Batería Baja y Nuestra Era Digital</title>
+    <description>Exploramos la nomofobia, el miedo irracional a quedarse sin batería, y cómo redefine nuestra dependencia tecnológica. Analizamos la profunda integración del smartphone en la vida moderna, el FOMO, y las consecuencias psicológicas de estar siempre conectado. Descubre estrategias para una relación más consciente con la tecnología y cómo superar el 'pánico del 1%'.</description>
+    <pubDate>Thu, 06 Nov 2025 11:06:42 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762427183988.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1762427202372</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762427198694.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
