@@ -282,5 +282,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Modas Ridículas 2000s: Un Viaje por tu Armario de la Vergüenza</title>
+    <description>Prepárate para un viaje nostálgico y vergonzoso por las tendencias de moda más icónicas (y ridículas) de los 2000 y 2010. Desde los infames jeans de tiro bajo y los chándales de terciopelo hasta los chokers de tatuaje y las Uggs en verano, exploramos cómo estas modas efímeras definieron una generación. Analizamos su impacto cultural, el papel de las celebridades y la búsqueda de identidad juvenil. ¿Qué hay detrás de estas elecciones de estilo que hoy nos hacen reír? ¡Descubre por qué nos vestimos así y qué podemos aprender de nuestro armario del pasado!</description>
+    <pubDate>Fri, 07 Nov 2025 09:38:19 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762508280199.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1762508299712</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762508296430.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
