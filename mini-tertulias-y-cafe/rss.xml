@@ -293,5 +293,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>El Monólogo Digital: Cuando tu Bandeja de Entrada se Convierte en Podcast Personal</title>
+    <description>Los audios largos se han convertido en un dilema en la comunicación digital, transformando tu bandeja de entrada en un podcast personal no solicitado. Analizamos cómo esta comodidad para unos es una carga para otros, generando fatiga digital y redefiniendo la etiqueta social. Descubre por qué son tan comunes y cómo impactan nuestras relaciones, con historias reales y consejos para una comunicación más consciente. ¡Evita el 'monólogo digital'!</description>
+    <pubDate>Fri, 07 Nov 2025 09:43:04 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762508566336.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1762508584993</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762508581989.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
