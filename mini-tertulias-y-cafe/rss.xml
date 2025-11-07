@@ -271,5 +271,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>DIY Seguro: Los 'Casi Accidentes' y el Límite de tus Reparaciones Caseras</title>
+    <description>Descubre los peligros ocultos del bricolaje en casa. ¿Creías que ahorrabas, pero casi provocas un desastre eléctrico o una inundación? Exploramos por qué el 'hazlo tú mismo' puede volverse un 'casi accidente' y te damos las claves para saber cuándo es vital llamar a un profesional. Historias reales te harán reconsiderar tu próximo proyecto. ¡Aprende a evitar sustos, daños y gastos extra en tu hogar!</description>
+    <pubDate>Fri, 07 Nov 2025 09:33:49 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762508008691.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1762508029723</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762508026527.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
