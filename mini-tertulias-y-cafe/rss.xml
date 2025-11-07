@@ -216,5 +216,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Adiós con Gracia: La Ciencia Detrás de la Retirada Perfecta en Fiestas</title>
+    <description>¿Te has preguntado cuándo es el momento ideal para irte de una fiesta sin ofender? Exploramos la ciencia no escrita detrás del 'gran escape silencioso'. Descubre el 'pico social', los dilemas de anfitriones e invitados, y el impacto del 'ghosting'. Aprende a despedirte con gracia, evitando prolongaciones incómodas y dejando siempre una buena impresión. Este episodio desvela la etiqueta moderna y el bienestar social en el arte de la partida.</description>
+    <pubDate>Fri, 07 Nov 2025 09:07:22 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1762506423860.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1762506442536</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762506439103.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
