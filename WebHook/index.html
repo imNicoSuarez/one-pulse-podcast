@@ -51,10 +51,7 @@
 <script>
   // tu función original (adaptada ligeramente para mostrar logs)
   function sendDirectRequest(webhookUrl, auth, type, payload) {
-    const requestBody = {
-      request: payload,
-      type: type
-    };
+    const requestBody = payload;
 
     // Convertir usuario:pass a Base64
     const basicAuthToken = btoa(`${auth.user}:${auth.pass}`);
