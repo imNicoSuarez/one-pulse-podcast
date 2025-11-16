@@ -281,7 +281,7 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
- <!-- 
+  
   <item>
     <title>Modas Ridículas 2000s: Un Viaje por tu Armario de la Vergüenza</title>
     <description>Prepárate para un viaje nostálgico y vergonzoso por las tendencias de moda más icónicas (y ridículas) de los 2000 y 2010. Desde los infames jeans de tiro bajo y los chándales de terciopelo hasta los chokers de tatuaje y las Uggs en verano, exploramos cómo estas modas efímeras definieron una generación. Analizamos su impacto cultural, el papel de las celebridades y la búsqueda de identidad juvenil. ¿Qué hay detrás de estas elecciones de estilo que hoy nos hacen reír? ¡Descubre por qué nos vestimos así y qué podemos aprender de nuestro armario del pasado!</description>
@@ -290,9 +290,9 @@
     <guid isPermaLink="false">1762508299712</guid>
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762508296430.png" />
     <itunes:episodeType>full</itunes:episodeType>
-  </item> -->  
+  </item>   
 
- <!-- 
+
   <item>
     <title>El Monólogo Digital: Cuando tu Bandeja de Entrada se Convierte en Podcast Personal</title>
     <description>Los audios largos se han convertido en un dilema en la comunicación digital, transformando tu bandeja de entrada en un podcast personal no solicitado. Analizamos cómo esta comodidad para unos es una carga para otros, generando fatiga digital y redefiniendo la etiqueta social. Descubre por qué son tan comunes y cómo impactan nuestras relaciones, con historias reales y consejos para una comunicación más consciente. ¡Evita el 'monólogo digital'!</description>
@@ -301,7 +301,7 @@
     <guid isPermaLink="false">1762508584993</guid>
     <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1762508581989.png" />
     <itunes:episodeType>full</itunes:episodeType>
-  </item> -->  
+  </item>   
 
 </channel>
 </rss>
