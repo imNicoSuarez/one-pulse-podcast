@@ -314,5 +314,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Protege Tu Patrimonio: Los Peligros del Mal Consejo Financiero</title>
+    <description>En este episodio, desentrañamos 'La Trampa Dorada' de los peores consejos financieros que proliferan en redes sociales y minan tu patrimonio. Analizamos cómo 'gurús' y mitos populares te llevan a decisiones catastróficas. Descubre los errores más comunes: desde pedir préstamos para invertir hasta la inacción por miedo. Aprende a proteger tu dinero, identificar fuentes dudosas y evitar la ruina financiera y emocional. Es crucial discernir entre buen y mal consejo para construir un futuro sólido.</description>
+    <pubDate>Mon, 17 Nov 2025 09:05:07 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1763370284340.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1763370307736</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1763370304007.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
