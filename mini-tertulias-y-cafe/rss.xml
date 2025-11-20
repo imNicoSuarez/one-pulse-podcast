@@ -325,5 +325,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>El Placer Efímero de Limpiar: Control y Paz en el Caos Diario</title>
+    <description>Descubre por qué millones encuentran profunda satisfacción en limpiar lo que saben que volverá a ensuciarse. Este episodio explora la paradoja del orden efímero, revelando cómo el acto de limpiar se convierte en un ritual de control, mindfulness y reducción de ansiedad. Sumérgete en las raíces psicológicas de este fenómeno global y entiende la búsqueda de belleza y paz en el caos cotidiano. Aprende a revalorizar estos pequeños triunfos diarios contra la entropía. ¿Es una batalla perdida o un oasis de bienestar?</description>
+    <pubDate>Thu, 20 Nov 2025 23:48:22 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1763682483718.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1763682502033</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1763682498444.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
