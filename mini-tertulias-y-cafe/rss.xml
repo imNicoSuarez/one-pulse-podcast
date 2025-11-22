@@ -347,5 +347,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>La Hora del Lobo: Desentrañando tus Pensamientos de Madrugada</title>
+    <description>¿Te despiertas a las 3 AM con la mente a mil? Exploramos el misterioso fenómeno de la "hora del lobo", donde ansiedades y pensamientos profundos nos asaltan en la quietud de la noche. Analizamos las causas biológicas y psicológicas, desde la fluctuación hormonal hasta el estrés no procesado. Descubre cómo expertos explican este despertar inoportuno y las estrategias efectivas para gestionar esos momentos, transformando la introspección nocturna en una herramienta para tu bienestar mental. ¡No dejes que la madrugada te robe la calma!</description>
+    <pubDate>Sat, 22 Nov 2025 09:03:25 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1763802185791.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1763802205378</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1763802201324.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
