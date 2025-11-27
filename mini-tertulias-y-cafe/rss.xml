@@ -369,5 +369,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Uniendo Universos: Goku, Superman y el Anhelo del Crossover Definitivo</title>
+    <description>Exploramos el fascinante sueño de un crossover entre íconos del anime y los cómics occidentales, como Goku y Superman. Analizamos las sinergias narrativas que lo harían épico, los colosales desafíos de propiedad intelectual y coherencia, y cómo la pasión fan mantiene viva esta quimera en la cultura pop. ¿Será posible algún día? Descúbrelo.</description>
+    <pubDate>Thu, 27 Nov 2025 22:37:07 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764283009215.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764283027526</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764283024120.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
