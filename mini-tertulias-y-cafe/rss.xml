@@ -380,5 +380,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Pánico Post-Envío: La Ansiedad del Email Equivocado en la Era Digital</title>
+    <description>Siente el escalofrío que recorre tu espalda al presionar 'enviar' y darte cuenta del error. Exploramos el fenómeno universal del pánico post-envío de emails: desde errores tipográficos hasta adjuntos olvidados o receptores equivocados. Descubre el impacto psicológico de este micro-pánico digital, las historias reales de arrepentimiento y cómo la tecnología intenta mitigar esta angustia moderna. Aprende estrategias para evitar esos momentos de terror y gestiona mejor tu comunicación digital. Un episodio crucial para cualquiera que use el email a diario.</description>
+    <pubDate>Fri, 28 Nov 2025 09:02:58 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764320561563.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764320578978</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764320575726.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
