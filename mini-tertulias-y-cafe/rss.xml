@@ -391,5 +391,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Contra la Corriente: ¿Por Qué Odias la Película Favorita de Todos?</title>
+    <description>¿Alguna vez te has sentido solo al detestar una película que todos adoran? Exploramos el fenómeno de la disidencia cinéfila, por qué nos resistimos a los clásicos y éxitos de taquilla, y la presión social que conlleva. Descubre las razones detrás de este rechazo y celebra la belleza de la individualidad en el gusto cinematográfico.</description>
+    <pubDate>Sat, 29 Nov 2025 09:02:42 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764406942847.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764406962326</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764406958799.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
