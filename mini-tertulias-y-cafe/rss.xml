@@ -402,5 +402,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Manga y Anime: Los Clichés Inquebrantables que Amamos Odiar</title>
+    <description>Exploramos los clichés del manga y anime: desde el poder de la amistad hasta el protagonista elegido. ¿Por qué estas 'reglas inquebrantables' persisten a través del tiempo? Analizamos su rol como pilares narrativos que dividen y unen a la comunidad otaku. Descubre el debate entre su familiaridad reconfortante y el deseo de innovación, y cómo los creadores los reinterpretan para el futuro de la narrativa japonesa.</description>
+    <pubDate>Sun, 30 Nov 2025 09:02:41 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764493341722.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764493361050</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764493357114.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
