@@ -413,5 +413,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Fatiga Alimentaria: El Estrés de Decidir Tu Menú</title>
+    <description>¿Sientes que elegir qué comer cada día es una batalla mental? Este episodio explora la "agonía silenciosa" de la fatiga alimentaria. Analizamos cómo la paradoja de la elección, la presión social, el bombardeo nutricional y las limitaciones de tiempo transforman un acto vital en una fuente de ansiedad y culpa. Descubre las razones detrás de este agotamiento diario y cómo recuperar el placer de la comida sin estrés. Un indispensable para entender el laberinto de nuestro plato.</description>
+    <pubDate>Mon, 01 Dec 2025 09:02:50 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764579750421.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764579770996</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764579767602.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
