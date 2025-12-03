@@ -424,5 +424,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Lunes Productivo: Vence el Mito y Maximiza tu Rendimiento Semanal</title>
+    <description>Millones luchan contra el temido 'lunes negro', sintiendo baja productividad y resistencia. Pero, ¿es el lunes realmente una condena? Expertos revelan cómo factores psicológicos, biológicos y culturales influyen en nuestro inicio de semana. Descubre estrategias científicas para transformar la inercia del lunes en un potente impulso semanal. Aprende a planificar, ajustar tu sueño, integrar rituales y vencer la carga mental para desatar tu máximo potencial. Rompe el mito y haz del lunes tu día más productivo.</description>
+    <pubDate>Wed, 03 Dec 2025 09:03:09 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764752572391.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764752589937</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764752586625.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
