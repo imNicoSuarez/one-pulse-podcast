@@ -435,5 +435,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>La Guerra del Clóset: Cuando la Ropa Vieja Desafía tu Cuerpo y Mente</title>
+    <description>¿Por qué un simple par de jeans de hace cinco años puede desatar una crisis de identidad? Este episodio explora la compleja batalla que libramos al intentar encajar en la ropa del pasado. Analizamos los inevitables cambios biológicos, el profundo impacto psicológico en nuestra autoimagen y las implacables presiones sociales. Expertos y testimonios reales revelan que no es solo cuestión de talla, sino de aceptar la evolución de nuestro cuerpo y cultivar la autocompasión. Descubre cómo transformar esta frustración en una oportunidad para redefinir tu valor más allá de las etiquetas.</description>
+    <pubDate>Thu, 04 Dec 2025 09:03:05 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764838962141.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764838985835</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764838977751.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
