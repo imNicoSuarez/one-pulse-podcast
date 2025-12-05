@@ -446,5 +446,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Los Simpson: ¿Oráculos de Springfield o Maestros de la Sátira Social?</title>
+    <description>Exploramos el fascinante fenómeno de las 'predicciones' de Los Simpson. ¿Es pura coincidencia estadística, el genio de una sátira social incisiva o un reflejo inquietante de la realidad? Analizamos cómo la serie ha "anticipado" eventos desde la presidencia de Trump hasta fusiones corporativas, desentrañando el debate entre el azar y la observación aguda. Descubre por qué Springfield se ha convertido en un espejo distorsionado de nuestra sociedad y cómo la ficción moldea nuestra percepción. Un viaje por la cultura pop que desafía la lógica.</description>
+    <pubDate>Fri, 05 Dec 2025 11:51:17 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1764935459503.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1764935477166</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1764935473899.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
