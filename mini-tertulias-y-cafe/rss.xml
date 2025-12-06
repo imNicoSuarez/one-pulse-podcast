@@ -457,5 +457,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Amistad Adulta: Un Desafío Esencial para el Bienestar y la Resiliencia</title>
+    <description>En un mundo de exigencias constantes, la amistad adulta se enfrenta a un desafío sin precedentes. Este episodio explora por qué estos lazos vitales se erosionan en la madurez y cómo la falta de conexión impacta seriamente nuestra salud mental y física. Descubre los obstáculos, desde la productividad laboral hasta la vida urbana, y la importancia crucial de priorizar estas relaciones. Un llamado a la acción para defender y nutrir nuestra red de apoyo esencial.</description>
+    <pubDate>Sat, 06 Dec 2025 09:02:50 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1765011754858.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1765011770738</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1765011767964.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
