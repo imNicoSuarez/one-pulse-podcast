@@ -468,5 +468,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Tiradas Fallidas, Historias Inolvidables: Celebrando los Fracasos Épicos en D&D</title>
+    <description>En Dungeons & Dragons, la gloria no es lo único que forja leyendas. Exploramos cómo las tiradas fallidas y las decisiones dudosas de Magos, Guerreros y Bardos transforman gestas épicas en anécdotas hilarantes y memorables. Descubre por qué los fracasos son el verdadero motor de las historias más queridas de la mesa. ¡Prepárate para reír y aprender de los tropiezos más épicos!</description>
+    <pubDate>Sun, 07 Dec 2025 09:02:50 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1765098153782.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1765098170886</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1765098167503.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
