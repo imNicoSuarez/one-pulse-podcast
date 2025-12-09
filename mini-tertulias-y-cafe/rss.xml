@@ -490,5 +490,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>La Batalla del Termostato: Clima Interior, Productividad y Sostenibilidad</title>
+    <description>¿Alguna vez has discutido por el termostato? El control del aire acondicionado es más que confort personal; es una 'Guerra Fría' que afecta tu salud, productividad y el planeta. Exploramos la ciencia detrás de la percepción térmica, cómo influye en tu rendimiento laboral, el gigantesco costo energético y las soluciones para un equilibrio sostenible. Descubre por qué un simple grado puede desatar un debate y cómo podemos construir entornos más inteligentes y equitativos.</description>
+    <pubDate>Tue, 09 Dec 2025 09:02:36 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1765270938454.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1765270956334</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1765270952537.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
