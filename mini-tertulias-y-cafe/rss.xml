@@ -501,5 +501,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>La Psique del Coleccionista Adulto: LEGO, Harry Potter y Nuestras Justificaciones</title>
+    <description>Descubre por qué millones de adultos invierten en LEGO y Harry Potter. Analizamos las complejas justificaciones mentales detrás de estas compras: desde la nostalgia que evoca la infancia y el alivio del estrés, hasta la búsqueda de identidad y la sensación de comunidad. Explora cómo estas marcas se arraigan en nuestra necesidad de felicidad y escape en la vida adulta, transformando un simple juguete en una inversión emocional y social. ¿Es una terapia, una inversión o un refugio?</description>
+    <pubDate>Mon, 15 Dec 2025 11:48:56 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1765799318535.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1765799336693</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1765799333373.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
