@@ -512,5 +512,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Pixel Perfecto: La Obsesión Digital por la Foto Ideal y Su Costo Oculto</title>
+    <description>¿Por qué disparamos ráfagas de fotos para elegir solo una? Analizamos la paradoja del pixel perfecto: cómo la tecnología, el perfeccionismo y la validación social nos impulsan a buscar la imagen ideal. Exploramos la ansiedad que genera esta obsesión, el tiempo invertido y el impacto en nuestro bienestar. Descubre las razones detrás de este fenómeno global y cómo la IA podría cambiar nuestra relación con la fotografía digital.</description>
+    <pubDate>Thu, 18 Dec 2025 09:03:36 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1766048599549.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1766048616791</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1766048613302.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
