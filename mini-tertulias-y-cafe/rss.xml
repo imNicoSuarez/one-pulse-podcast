@@ -534,5 +534,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Fin de Serie: El Drama de Encontrar tu Próxima Obsesión en el Streaming</title>
+    <description>¿Terminaste tu serie favorita y ahora enfrentas una crisis existencial frente a la pantalla en blanco? Este episodio explora el fenómeno del 'duelo' post-serie, la abrumadora paradoja de la elección en el streaming y por qué los algoritmos no siempre aciertan. Analizamos la fatiga de decisión y el rol vital de las recomendaciones humanas para navegar el laberinto de contenido y encontrar tu siguiente gran historia.</description>
+    <pubDate>Sat, 20 Dec 2025 09:03:22 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1766221382974.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1766221402255</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1766221398828.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
