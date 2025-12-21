@@ -545,5 +545,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Cultura Cringe: La Epidemia del Bochorno en la Era Digital</title>
+    <description>Exploramos el fenómeno "cringe", desde sus orígenes en internet hasta su explosión en redes como TikTok. Analizamos cómo esta vergüenza ajena redefine la autenticidad, la interacción social y el miedo al ridículo público en nuestra era digital, impactando la autoestima y la empatía. ¿Es la "época cringe" una fase o nuestra nueva realidad que exige mayor resiliencia y compasión digital?</description>
+    <pubDate>Sun, 21 Dec 2025 09:02:52 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1766307753047.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1766307772478</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1766307768999.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
