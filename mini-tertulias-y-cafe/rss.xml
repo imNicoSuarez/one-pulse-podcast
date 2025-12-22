@@ -556,5 +556,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>Juegos de Mesa y Amistades: ¿Un Campo de Batalla Oculto?</title>
+    <description>Los juegos de mesa como Dungeons & Dragons y Munchkin son más que diversión; pueden ser un espejo cruel que revela las fragilidades de nuestras amistades. Exploramos cómo la traición estratégica, los egos individuales y la competitividad desmedida en estos populares pasatiempos ponen a prueba los lazos más fuertes. Analizamos casos reales, la psicología detrás de los conflictos en la mesa y ofrecemos claves para evitar que un golpe crítico o un tesoro virtual terminen con una amistad. Descubre cómo jugar sabiamente sin romper lazos valiosos.</description>
+    <pubDate>Mon, 22 Dec 2025 09:03:39 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/audio/audio-episodio-1766394198679.mp3" length="11" type="audio/mpeg" />
+    <guid isPermaLink="false">1766394219257</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/mini-tertulias-y-cafe/episodios/covers/cover-episodio-1766394215348.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
