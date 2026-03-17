@@ -3,14 +3,17 @@
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mini Tertulias &amp; Café</title>
+    <title>Morning Signals</title>
     <link>https://imnicosuarez.github.io/one-pulse-podcast/</link>
     <language>es-ES</language>
        
     <copyright>© 2026 Morning Signals</copyright> 
        
     <description>
-     Un podcast de novedasdes en Tech, Diseño, IA y mas. Con Alex Pixel.
+     Morning Signals es tu podcast matutino de referencia sobre tecnología, diseño e innovación. Únete a Alex Pixel en un viaje dinámico por las últimas tendencias, análisis de actualidad, curiosidades
+         y reflexiones sobre el futuro que nos depara. Descubre cómo la inteligencia artificial, los nuevos dispositivos y 
+         el diseño transforman nuestras vidas. Con un tono cercano y ameno, Alex te inspira y conecta con el panorama tecnológico en constante evolución. 
+         ¡Conéctate y descubre las señales que definen el futuro!
     </description>
     
    <!-- Categoria -->  
@@ -21,7 +24,11 @@
     <!-- iTunes-specific metadata -->
     <itunes:author>Senda Cast</itunes:author>
     <itunes:summary>
-         Un podcast de novedasdes en Tech, Diseño, IA y mas. Con Alex Pixel.
+         Morning Signals es tu podcast matutino de referencia sobre tecnología, diseño e innovación.
+         Únete a Alex Pixel en un viaje dinámico por las últimas tendencias, análisis de actualidad, curiosidades y 
+         reflexiones sobre el futuro que nos depara. Descubre cómo la inteligencia artificial, los nuevos dispositivos y el diseño 
+         transforman nuestras vidas. Con un tono cercano y ameno, Alex te inspira y conecta con el panorama tecnológico en constante evolución. 
+         ¡Conéctate y descubre las señales que definen el futuro!
     </itunes:summary>
        
     <itunes:explicit>no</itunes:explicit>
