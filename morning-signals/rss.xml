@@ -49,5 +49,16 @@
          <itunes:episodeType>trailer</itunes:episodeType>
        </item>  
     
+
+  <item>
+    <title>IA: El Gran Debate en Diseño, Ética y Tecnología de Vanguardia</title>
+    <description>undefined</description>
+    <pubDate>Tue, 17 Mar 2026 17:39:40 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-el-gran-debate-en-diseno-etica-y-tecnologia-de-vanguardia.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1773769180229</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1773766491005.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
