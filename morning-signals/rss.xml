@@ -58,5 +58,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>IA Agéntica: El Futuro del Diseño con Equipos Inteligentes</title>
+    <description>¡La IA ya no es solitaria! Descubre cómo los equipos de 'agentes' de OpenAI, NVIDIA y Anthropic están transformando la tecnología y el diseño. ¿El proceso creativo está muerto o solo se comprimió? Exploramos el debate con Nielsen Norman Group y te damos herramientas como Claude Dispatch para empezar a construir tu futuro con IA. Aprende a ir de la idea al prototipo en segundos. ¡El poder de la IA en tu bolsillo!</description>
+    <pubDate>Wed, 18 Mar 2026 09:51:36 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-agentica-el-futuro-del-diseno-con-equipos-inteligentes.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1773827496121</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1773827493155.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
