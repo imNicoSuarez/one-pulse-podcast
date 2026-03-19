@@ -60,12 +60,23 @@
 
 
   <item>
-    <title>Agentes IA: La Guerra de Plataformas y el Futuro del Diseño con Código</title>
-    <description>La era de los agentes de IA ya es una realidad con OpenAI y NVIDIA liderando la automatización. Exploramos cómo Anthropic está ganando la batalla corporativa y la revolución del diseño donde Figma se conecta directamente al código vía IA. Descubre por qué el rol del diseñador es ahora más estratégico y emocional que nunca. Prepárate para transformar tu workflow con las señales clave del día en IA, Diseño y Negocio Tech.</description>
-    <pubDate>Wed, 18 Mar 2026 09:52:24 GMT</pubDate>
-    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/agentes-ia-la-guerra-de-plataformas-y-el-futuro-del-diseno-con-codigo.mp3" length="1234567" type="audio/mpeg" />
-    <guid isPermaLink="false">1773827544383</guid>
-    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1773827541615.png" />
+    <title>IA Agéntica: El Futuro del Diseño con Equipos Inteligentes</title>
+    <description>¡La IA ya no es solitaria! Descubre cómo los equipos de 'agentes' de OpenAI, NVIDIA y Anthropic están transformando la tecnología y el diseño. ¿El proceso creativo está muerto o solo se comprimió? Exploramos el debate con Nielsen Norman Group y te damos herramientas como Claude Dispatch para empezar a construir tu futuro con IA. Aprende a ir de la idea al prototipo en segundos. ¡El poder de la IA en tu bolsillo!</description>
+    <pubDate>Wed, 18 Mar 2026 09:51:36 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-agentica-el-futuro-del-diseno-con-equipos-inteligentes.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1773827496121</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1773827493155.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
+
+  <item>
+    <title>La IA Redefine Diseño y Producto: Agentes, CSS y la Era de la Metacognición</title>
+    <description>Prepárense para Morning Signals. Desglosamos cómo OpenAI y NVIDIA impulsan la IA agéntica y los modelos comprimidos, redefiniendo el futuro del producto y diseño. Exploramos desde el impacto de la IA en el proceso creativo (¡el diseño no ha muerto, se ha comprimido!) hasta la nueva propiedad `corner-shape` de CSS y el arte del UX conversacional. Descubre cómo la IA empodera a creadores individuales y la clave habilidad de la metacognición para dominar esta era. ¡Un futuro donde la IA acelera tu pensamiento, no lo reemplaza!</description>
+    <pubDate>Thu, 19 Mar 2026 11:12:17 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/la-ia-redefine-diseno-y-producto-agentes-css-y-la-era-de-la-metacognicion.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1773918737440</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1773918734629.png" />
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
