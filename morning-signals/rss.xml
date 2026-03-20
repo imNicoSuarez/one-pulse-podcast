@@ -80,5 +80,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>IA Agéntica, Diseño Estratégico y Futuro Tech: Señales de Morning Signals</title>
+    <description>Explora cómo la IA agéntica de OpenAI, DeepMind y NVIDIA revoluciona el diseño y los negocios tech. Analizamos la transformación del diseñador en 'director de intención', herramientas innovadoras como la sincronización Figma-código, y cómo la IA empodera a perfiles no técnicos. Reflexionamos sobre la ética, seguridad y la gestión de tu arsenal de asistentes inteligentes para un futuro donde los bots superarán a los humanos en la web.</description>
+    <pubDate>Fri, 20 Mar 2026 11:12:10 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-agentica-diseno-estrategico-futuro-tech-morning-signals.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1774005130552</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1774005127685.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
