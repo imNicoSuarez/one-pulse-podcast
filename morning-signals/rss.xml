@@ -91,5 +91,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>IA en Acción: Mini-IAs, Fábricas Inteligentes y el Diseño Humano del Futuro</title>
+    <description>Descubre cómo la IA redefine el futuro, desde los nuevos modelos de OpenAI y las inversiones de Bezos en manufactura hasta los desafíos éticos con Anthropic. Exploramos su impacto en diseño, el rol clave de la estrategia humana y cómo evitar errores en chatbots. Además, conoce herramientas y tácticas para potenciar tu creatividad con IA. ¡Prepárate para la evolución tecnológica!</description>
+    <pubDate>Sat, 21 Mar 2026 11:11:49 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-en-accion-mini-ias-fabricas-inteligentes-y-el-diseno-humano-del-futuro.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1774091509384</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1774091506967.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
