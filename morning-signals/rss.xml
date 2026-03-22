@@ -102,5 +102,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>El Futuro de la IA: Agentes Autónomos, Diseño Inteligente y Dilemas Humanos</title>
+    <description>Explora cómo la IA redefine la creación y el trabajo. Analizamos los equipos de IA multi-agente de OpenAI, la automatización móvil de Gemini de Google y la tensa disputa legal de Anthropic. Descubre por qué la metaconocimiento es clave y cómo el diseño evoluciona de "pixel perfect" a "director de intención" con GenUI y la sincronización Figma-Claude. Conoce el ingenioso uso de IA para vencer estafadores y aprende a potenciar tu labor. ¡Domina las señales de la IA!</description>
+    <pubDate>Sun, 22 Mar 2026 11:12:03 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/el-futuro-de-la-ia-agentes-autonomos-diseno-inteligente-y-dilemas-humanos.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1774177923321</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1774177920863.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
