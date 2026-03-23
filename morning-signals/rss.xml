@@ -113,5 +113,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>La Carrera de la IA: Ética, Diseño y el Poder de los Agentes</title>
+    <description>Prepárate para un análisis profundo de la carrera de la IA, desde la búsqueda de la AGI y los nuevos chips hasta la ética y regulación. Descubre cómo la IA está comprimiendo el proceso de diseño, fusionando diseño y código en Figma, y qué significa el "punto ciego icónico" de la IA. Exploramos el arte del flujo conversacional y te damos una táctica para implementar agentes de IA en tu día a día, transformando tareas repetitivas. ¡Adaptabilidad y curiosidad son tus superpoderes!</description>
+    <pubDate>Mon, 23 Mar 2026 11:12:32 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/la-carrera-de-la-ia-etica-diseno-y-el-poder-de-los-agentes.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1774264352274</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1774264349337.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
