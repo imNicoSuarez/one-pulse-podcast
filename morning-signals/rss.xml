@@ -124,5 +124,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>IA, Ética y Diseño: La Revolución que Redefine el Mañana</title>
+    <description>Prepárate para la ola de la IA que lo cambia todo. En este episodio, desglosamos la carrera hacia la AGI con NVIDIA y Google DeepMind, la batalla por los chips y las complejidades éticas. Exploramos cómo el diseño se transforma de creador a director de intención, abordando la accesibilidad de herramientas y la evolución del CSS. Cerraremos con una táctica para usar agentes IA duales y potenciar tu trabajo. ¡Tu juicio humano es tu superpoder!</description>
+    <pubDate>Tue, 24 Mar 2026 11:13:06 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-etica-diseno-la-revolucion-que-redefine-el-manana.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1774350786979</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1774350784444.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
