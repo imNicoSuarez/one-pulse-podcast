@@ -135,5 +135,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>IA al Límite: Redefiniendo Diseño, Ética y el Futuro del Trabajo</title>
+    <description>La carrera por la IA es vertiginosa. Exploramos cómo Claude MYTHOS y Gemini 3.1 redefinen lo posible, la guerra por el hardware con centros de datos espaciales, y los dilemas éticos tras el cierre de Sora. Descubre el nuevo rol del diseñador como arquitecto de intención, la fusión de diseño y código en Figma, y cómo usar la IA como tu copiloto. ¡No te quedes atrás!</description>
+    <pubDate>Mon, 30 Mar 2026 13:54:46 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-al-limite-redefiniendo-diseno-etica-y-el-futuro-del-trabajo.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1774878886173</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1774878882602.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
