@@ -146,5 +146,16 @@
     <itunes:episodeType>full</itunes:episodeType>
   </item>
 
+
+  <item>
+    <title>IA al Límite: Diseño, Ética y la Revolución de los Agentes Inteligentes</title>
+    <description>¡Prepárate para la descarga de Morning Signals! Desglosamos la vertiginosa carrera de la IA, desde Claude MYTHOS y Gemma 4 hasta los agentes que hackean sistemas. Analizamos la ética, el impacto ambiental y cómo esta revolución redefine tu rol en diseño y producto. Descubre la clave de la empatía humana, las herramientas que agilizan tu trabajo y una táctica para usar agentes de IA duales hoy mismo. ¡Tu cerebro a mil con las últimas tendencias!</description>
+    <pubDate>Mon, 06 Apr 2026 09:03:03 GMT</pubDate>
+    <enclosure url="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/audio/ia-al-limite-diseno-etica-y-la-revolucion-de-los-agentes-inteligentes.mp3" length="1234567" type="audio/mpeg" />
+    <guid isPermaLink="false">1775466183575</guid>
+    <itunes:image href="https://imnicosuarez.github.io/one-pulse-podcast/morning-signals/episodios/covers/cover-episodio-1775466180746.png" />
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+
 </channel>
 </rss>
